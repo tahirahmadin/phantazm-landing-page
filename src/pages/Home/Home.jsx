@@ -5,7 +5,6 @@ import Features from "./Features";
 import HowItWorks from "./HowItWorks";
 import PBRToken from "./PBRToken";
 // import Team from './Team';
-import Roadmap from "./Roadmap";
 import SocialLinks from "./SocialLinks";
 import Footer from "../../common/Footer";
 import Listings from "./Listings";
@@ -33,16 +32,14 @@ const useStyles = makeStyles((theme) => ({
   background: {
     overflowX: "hidden",
     background: `linear-gradient(
-      rgba(0, 0, 0, 0.95),
-      rgba(0, 0, 0, 0.71)
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.51)
     ),
-    url("images/bg.webp")
+    url("https://img.freepik.com/premium-vector/network-connection-background_23-2148899874.jpg")
       no-repeat center center fixed`,
     backgroundSize: "cover",
     minHeight: "100vh",
-    // background: `linear-gradient(rgba(0, 0, 0, 0.95),rgba(0, 0, 0, 0.51)),url("images/bg.webp") no-repeat center center fixed`,
-    // height: "100vh 100vw",
-    // [theme.breakpoints.down("sm")]: {},
+    //  background: `linear-gradient(rgba(0, 0, 0, 0.95),rgba(0, 0, 0, 0.51)),url("images/bg.webp") no-repeat center center fixed`,
   },
 }));
 
@@ -74,6 +71,9 @@ export default function Home() {
       <div className={classes.background}>
         <section id="header">
           <Header />
+        </section>
+        <section id="products">
+          <Features />
         </section>
         {/* <section id="products">
           <Features />

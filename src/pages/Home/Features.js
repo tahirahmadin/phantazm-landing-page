@@ -45,7 +45,6 @@ const useStyles = makeStyles((theme) => ({
     background: `linear-gradient(to bottom,#D9047C, #BF1088)`,
     lineHeight: "24px",
     verticalAlign: "baseline",
-
     margin: 0,
     marginTop: 15,
     color: "#ffffff",
@@ -58,9 +57,8 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   buttonOutlined: {
-    borderRadius: 10,
-    background: `rgba(224, 7, 125,0.8)`,
-
+    borderRadius: 20,
+    background: `rgba(130, 71, 229, 0.7)`,
     verticalAlign: "baseline",
     boxShadow: "rgba(0, 0, 0, 0.15) 0px 5px 15px 0px",
     margin: 0,
@@ -260,12 +258,11 @@ export default function Features() {
           <div className="container d-md-flex align-items-center justify-content-evenly mt-5">
             <div className="col-md-3">
               <h5 className={classes.featureTitle}>
-                Our <br />
-                Products
+                Product <br />
+                Highlights
               </h5>
               <p className={classes.featurePara}>
-                All your DeFi needs at one place and many more are coming. Swap,
-                Stake, participate and much more.
+                Increase your winning odds with Artificial Intelligence
               </p>
               <Hidden smDown>
                 {" "}
@@ -304,21 +301,24 @@ export default function Features() {
                     <Card className={classes.featureCardFull}>
                       <div
                         className="d-flex justify-content-center align-items-center"
-                        style={{ height: 200 }}
+                        style={{ height: 170 }}
                       >
-                        <img src="images/multi.png" height="120px" />
+                        <img
+                          src="https://cdn3d.iconscout.com/3d/premium/thumb/robot-6322971-5220353.png?f=webp"
+                          height="90px"
+                        />
                       </div>
-                      <h5 className={classes.cardTitle}>Multichain AMM</h5>
+                      <h5 className={classes.cardTitle}>
+                        Automated Trading Strategies
+                      </h5>
                       <p className={classes.cardValue}>
-                        Experience multichain and cross-chain AMM with lowest
-                        fees ever and trade with more 100+ token pairs.
+                        Enter the strategies by depositing the funds and let
+                        strategy work for you automatically.
                       </p>
                       <div className="text-center">
-                        <a href="https://swap.polkabridge.org" target="_blank">
-                          <Button className={classes.buttonOutlined}>
-                            Visit Now
-                          </Button>
-                        </a>
+                        <Button className={classes.buttonOutlined}>
+                          Coming soon
+                        </Button>
                       </div>
                     </Card>
                   </div>,
@@ -327,24 +327,25 @@ export default function Features() {
                     <Card className={classes.featureCardFull}>
                       <div
                         className="d-flex justify-content-center align-items-center"
-                        style={{ height: 200 }}
+                        style={{ height: 170 }}
                       >
-                        <img src="images/launchpad.png" height="120px" />
+                        <img
+                          src="https://cdn3d.iconscout.com/3d/premium/thumb/boost-6847514-5606144.png?f=webp"
+                          height="120px"
+                        />
                       </div>
-                      <h5 className={classes.cardTitle}>Launchpad</h5>
+                      <h5 className={classes.cardTitle}>
+                        Advance DeFi
+                        <br /> Staking
+                      </h5>
                       <p className={classes.cardValue}>
-                        Particiate in initial dex offering of fundamentally
-                        strong projects selected by PolkaBridge team.
+                        Stake your tokens to get even more than what you get as
+                        a staking rewards.
                       </p>
                       <div className="text-center">
-                        <a
-                          href="https://launchpad.polkabridge.org"
-                          target="_blank"
-                        >
-                          <Button className={classes.buttonOutlined}>
-                            Visit Now
-                          </Button>
-                        </a>
+                        <Button className={classes.buttonOutlined}>
+                          Coming soon
+                        </Button>
                       </div>
                     </Card>
                   </div>,
@@ -352,24 +353,25 @@ export default function Features() {
                     <Card className={classes.featureCardFull}>
                       <div
                         className="d-flex justify-content-center align-items-center"
-                        style={{ height: 200 }}
+                        style={{ height: 170 }}
                       >
                         <img
-                          src="https://cdn3d.iconscout.com/3d/premium/thumb/nft-staking-5112599-4269010.png"
+                          src="https://cdn3d.iconscout.com/3d/premium/thumb/electric-bulb-7971760-6397909.png"
                           height="120px"
                         />
                       </div>
-                      <h5 className={classes.cardTitle}>INO</h5>
+                      <h5 className={classes.cardTitle}>
+                        Crypto Industry <br />
+                        Insights
+                      </h5>
                       <p className={classes.cardValue}>
                         Enroll and participate in hottest NFT projects initial
                         offering with PolkaBridge.
                       </p>
                       <div className="text-center">
-                        <a href="http://ino.polkabridge.org/" target="_blank">
-                          <Button className={classes.buttonOutlined}>
-                            Visit Now
-                          </Button>
-                        </a>
+                        <Button className={classes.buttonOutlined}>
+                          Coming soon
+                        </Button>
                       </div>
                     </Card>
                   </div>,
@@ -393,11 +395,9 @@ export default function Features() {
                         burnt.
                       </p>
                       <div className="text-center">
-                        <a href="https://farm.polkabridge.org" target="_blank">
-                          <Button className={classes.buttonOutlined}>
-                            Visit Now
-                          </Button>
-                        </a>
+                        <Button className={classes.buttonOutlined}>
+                          Coming soon
+                        </Button>
                       </div>
                     </Card>
                   </div>,
@@ -415,11 +415,9 @@ export default function Features() {
                         more rewards with PolkaBridge.
                       </p>
                       <div className="text-center">
-                        <a href="https://stake.polkabridge.org" target="_blank">
-                          <Button className={classes.buttonOutlined}>
-                            Visit Now
-                          </Button>
-                        </a>
+                        <Button className={classes.buttonOutlined}>
+                          Coming soon
+                        </Button>
                       </div>
                     </Card>
                   </div>,
@@ -441,11 +439,9 @@ export default function Features() {
                         decentralised P2P Exchange.
                       </p>
                       <div className="text-center">
-                        <a>
-                          <Button className={classes.buttonOutlined}>
-                            Coming soon
-                          </Button>
-                        </a>
+                        <Button className={classes.buttonOutlined}>
+                          Coming soon
+                        </Button>
                       </div>
                     </Card>
                   </div>,
@@ -466,11 +462,9 @@ export default function Features() {
                         industry at your fingertips.
                       </p>
                       <div className="text-center">
-                        <a>
-                          <Button className={classes.buttonOutlined}>
-                            Coming soon
-                          </Button>
-                        </a>
+                        <Button className={classes.buttonOutlined}>
+                          Coming soon
+                        </Button>
                       </div>
                     </Card>
                   </div>,

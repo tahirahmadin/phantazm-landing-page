@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
   heading: {
     color: "white",
     textAlign: "center",
-    fontSize: 54,
+    fontSize: 42,
     fontWeight: 700,
     verticalAlign: "middle",
     wordSpacing: "0px",
@@ -111,7 +111,7 @@ export default function Team() {
   return (
     <div className={classes.background}>
       <div className="text-center">
-        <h4 className={classes.heading}>Advisors</h4>
+        <h4 className={classes.heading}>Our Team</h4>
 
         <div className="row flex-row justify-content-center">
           <Hidden smDown>
@@ -121,12 +121,12 @@ export default function Team() {
             <Fade left>
               <div className={classes.people}>
                 <img
-                  src="https://media.licdn.com/dms/image/C4D03AQGMN4tzjcWDuA/profile-displayphoto-shrink_800_800/0/1640565370957?e=2147483647&v=beta&t=4Hhq40vlmlxrwK5dstfEgIXR-9tr3rBtWtltCX-bjpg"
-                  alt="Hamzah"
+                  src="https://assets.website-files.com/61554cf1696635e97e823d26/637a93cff3d6aaa9641d304d_888723395%20-%201%20-%20Digital%20painting%20of%20an%20animation%20c.png"
+                  alt="Narmis"
                   className={classes.avatar}
                 />
-                <h6 className={classes.title}>Hamzah Khan</h6>
-                <p className={classes.para}>Degi Head, Polygon</p>
+                <h6 className={classes.title}>Narmis Nahk</h6>
+                <p className={classes.para}>CEO & Co-founder</p>
 
                 <Tooltip title="Telegram">
                   <a href="https://t.me/">
@@ -149,12 +149,12 @@ export default function Team() {
             <Fade left>
               <div className={classes.people}>
                 <img
-                  src="https://media.licdn.com/dms/image/C4D03AQGMN4tzjcWDuA/profile-displayphoto-shrink_800_800/0/1640565370957?e=2147483647&v=beta&t=4Hhq40vlmlxrwK5dstfEgIXR-9tr3rBtWtltCX-bjpg"
-                  alt="Hamzah"
+                  src="https://static.fotor.com/app/features/img/aiface/realistic/2.png"
+                  alt="rimaa"
                   className={classes.avatar}
                 />
-                <h6 className={classes.title}>Hamzah Khan</h6>
-                <p className={classes.para}>Degi Head, Polygon</p>
+                <h6 className={classes.title}>Rimaa Mala</h6>
+                <p className={classes.para}>BlockChain Lead</p>
 
                 <Tooltip title="Telegram">
                   <a href="https://t.me/">
@@ -177,12 +177,12 @@ export default function Team() {
             <Fade left>
               <div className={classes.people}>
                 <img
-                  src="https://media.licdn.com/dms/image/C4D03AQGMN4tzjcWDuA/profile-displayphoto-shrink_800_800/0/1640565370957?e=2147483647&v=beta&t=4Hhq40vlmlxrwK5dstfEgIXR-9tr3rBtWtltCX-bjpg"
-                  alt="Hamzah"
+                  src="https://images.nightcafe.studio/jobs/75Q7LZEgvfrTn7pACksG/75Q7LZEgvfrTn7pACksG--3--lyjfx.jpg?tr=w-1600,c-at_max"
+                  alt="Rihat"
                   className={classes.avatar}
                 />
-                <h6 className={classes.title}>Hamzah Khan</h6>
-                <p className={classes.para}>Degi Head, Polygon</p>
+                <h6 className={classes.title}>Rihat Damha</h6>
+                <p className={classes.para}>Marketing Lead</p>
 
                 <Tooltip title="Telegram">
                   <a href="https://t.me/">
@@ -201,16 +201,17 @@ export default function Team() {
               </div>
             </Fade>{" "}
           </div>
+
           <div className="col-6 col-md-2" align="center">
             <Fade left>
               <div className={classes.people}>
                 <img
-                  src="https://media.licdn.com/dms/image/C4D03AQGMN4tzjcWDuA/profile-displayphoto-shrink_800_800/0/1640565370957?e=2147483647&v=beta&t=4Hhq40vlmlxrwK5dstfEgIXR-9tr3rBtWtltCX-bjpg"
-                  alt="Hamzah"
+                  src="https://images.nightcafe.studio/jobs/mSC9EE8oUI21GbKYWBV8/mSC9EE8oUI21GbKYWBV8--4--d9mz0.jpg?tr=w-1600,c-at_max"
+                  alt="Rima"
                   className={classes.avatar}
                 />
-                <h6 className={classes.title}>Hamzah Khan</h6>
-                <p className={classes.para}>Degi Head, Polygon</p>
+                <h6 className={classes.title}>Iuqiddis Rima</h6>
+                <p className={classes.para}>Frontend Engineer</p>
 
                 <Tooltip title="Telegram">
                   <a href="https://t.me/">

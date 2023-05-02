@@ -2,7 +2,6 @@ import { Card } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { ChevronLeft, ChevronRight } from "@material-ui/icons";
 import { useState } from "react";
-import Pulse from "react-reveal/Pulse";
 
 const useStyles = makeStyles((theme) => ({
   background: {
@@ -158,11 +157,13 @@ const useStyles = makeStyles((theme) => ({
   },
   card: {
     padding: 10,
+    width: "100%",
     width: 280,
+    marginTop: 20,
     height: "fit-content",
     paddingBottom: 20,
     borderRadius: 30,
-    backgroundColor: "#161F30",
+    backgroundColor: "rgba(0,0,0,0.1)",
     border: "2px solid #2F3A4D",
     boxShadow: "0px 50px 200px rgba(0, 0, 0, 0.5)",
     [theme.breakpoints.down("sm")]: {
@@ -176,7 +177,7 @@ const useStyles = makeStyles((theme) => ({
       paddingRight: 5,
       width: "100%",
       height: "100%",
-      maxWidth: 200,
+      maxWidth: 240,
     },
   },
   cardActive: {
@@ -203,7 +204,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   cardWrapper: {
-    width: 280,
+    width: "100%",
     height: "100%",
     paddingBottom: 20,
     borderRadius: 30,
@@ -213,7 +214,7 @@ const useStyles = makeStyles((theme) => ({
       paddingRight: 5,
       width: "100%",
       height: "100%",
-      maxWidth: 230,
+      maxWidth: 250,
     },
 
     [theme.breakpoints.down("xs")]: {
@@ -250,14 +251,14 @@ export default function RoadmapNew() {
   const [x, setX] = useState(window.innerWidth > 950 ? 0 : -100);
 
   const goRight = () => {
-    x === -100 * ([1, 2, 3, 4].length - 3) ? setX(0) : setX(x - 100);
+    x === -100 * ([1, 2, 3].length - 3) ? setX(0) : setX(x - 100);
   };
   const goLeft = () => {
     x === 0 ? setX(0) : setX(x + 100);
   };
 
   const goRightMob = () => {
-    x === -100 * [1, 2, 3, 4].length ? setX(0) : setX(x - 100);
+    x === -100 * [1, 2, 3].length ? setX(0) : setX(x - 100);
   };
   const goLeftMob = () => {
     x === 0 ? setX(0) : setX(x + 100);
@@ -267,12 +268,15 @@ export default function RoadmapNew() {
     <div className={classes.background}>
       <h5 className={classes.title}>Roadmap</h5>
       <p className={classes.para}>
-        Fundamentally strong and visionary project with strong foundation.
+        Gearing up to revolutionize the automation in blockchain industry.
       </p>
-      <div className="container d-flex justify-content-around mt-5">
+      <div
+        className="container d-flex justify-content-around"
+        style={{ paddingTop: 70 }}
+      >
         <div
           style={{
-            height: window.innerWidth > 900 ? 500 : 400,
+            height: window.innerWidth > 900 ? 430 : 320,
             display: "flex",
             alignItems: "center",
           }}
@@ -295,30 +299,13 @@ export default function RoadmapNew() {
           {[
             <div className={classes.cardWrapper}>
               <h5 className={classes.quarterTitle}>Q2 - 2023</h5>
-              <div
-                className="d-flex justify-content-center mt-2 mb-2"
-                style={{ color: "#454545" }}
-              >
-                ------------{" "}
-                <div
-                  style={{
-                    backgroundColor: "green",
-                    borderRadius: 50,
-                    height: 20,
-                    width: 20,
-
-                    border: "2px solid #f9f9f9",
-                  }}
-                ></div>
-                ------------
-              </div>
               <Card className={classes.card}>
                 <div
                   className="d-flex justify-content-center align-items-center"
                   style={{ height: 120 }}
                 >
                   <img
-                    src="https://cdn3d.iconscout.com/3d/premium/thumb/chinese-coin-5100911-4256522.png"
+                    src="https://cdn3d.iconscout.com/3d/premium/thumb/delivery-box-5340240-4465979.png"
                     height="80px"
                   />
                 </div>
@@ -327,36 +314,21 @@ export default function RoadmapNew() {
                   <li className={classes.li}>
                     Minimum viable product is ready
                   </li>
-                  <li className={classes.li}>Preparing for IDO launch.</li>
+                  <li className={classes.li}>
+                    Preparing for IDO launch & raising funds.
+                  </li>
                 </div>
               </Card>{" "}
             </div>,
             <div className={classes.cardWrapper}>
               <h5 className={classes.quarterTitle}>Q3 - 2023</h5>
-              <div
-                className="d-flex justify-content-center mt-2 mb-2"
-                style={{ color: "#454545" }}
-              >
-                ------------{" "}
-                <div
-                  style={{
-                    backgroundColor: "green",
-                    borderRadius: 50,
-                    height: 20,
-                    width: 20,
-
-                    border: "2px solid #f9f9f9",
-                  }}
-                ></div>
-                ------------
-              </div>
               <Card className={classes.card}>
                 <div
                   className="d-flex justify-content-center align-items-center"
                   style={{ height: 120 }}
                 >
                   <img
-                    src="https://cdn3d.iconscout.com/3d/premium/thumb/money-exchange-4846672-4043144.png"
+                    src="https://cdn3d.iconscout.com/3d/premium/thumb/dollar-coin-4604543-3816872.png?f=webp"
                     height="80px"
                   />
                 </div>
@@ -373,37 +345,24 @@ export default function RoadmapNew() {
             </div>,
             <div className={classes.cardWrapper}>
               <h5 className={classes.quarterTitle}>Q4 - 2023</h5>
-              <div
-                className="d-flex justify-content-center mt-2 mb-2"
-                style={{ color: "#454545" }}
-              >
-                ------------{" "}
-                <div
-                  style={{
-                    backgroundColor: "green",
-                    borderRadius: 50,
-                    height: 20,
-                    width: 20,
-
-                    border: "2px solid #f9f9f9",
-                  }}
-                ></div>
-                ------------
-              </div>
               <Card className={classes.card}>
                 <div
                   className="d-flex justify-content-center align-items-center"
                   style={{ height: 120 }}
                 >
                   <img
-                    src="https://cdn3d.iconscout.com/3d/premium/thumb/polkadot-dot-crypto-coin-5236490-4377698.png"
+                    src="https://cdn3d.iconscout.com/3d/premium/thumb/business-startup-5825143-4874125.png?f=webp"
                     height="80px"
                   />
                 </div>
                 <h5 className={classes.cardTitle}>Mainnet Release</h5>
                 <div className="mt-3">
-                  <li className={classes.li}>Listing on tier-1 CEX (Kucoin)</li>
-                  <li className={classes.li}>Mainnet Multichain AMM</li>
+                  <li className={classes.li}>
+                    Releasing mainnet for atleast 5 strategies.
+                  </li>
+                  <li className={classes.li}>
+                    Listing token on Top exchanges.
+                  </li>
                 </div>
               </Card>{" "}
             </div>,
@@ -421,7 +380,7 @@ export default function RoadmapNew() {
         </div>
         <div
           style={{
-            height: window.innerWidth > 900 ? 500 : 400,
+            height: window.innerWidth > 900 ? 430 : 320,
             display: "flex",
             alignItems: "center",
           }}

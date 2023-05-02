@@ -41,15 +41,8 @@ export default function Footer() {
   return (
     <div className={classes.background}>
       <div className="container text-center">
-        <div>
-          <img
-            src="https://launchpad.polkabridge.org/img/logo-white.png"
-            alt="logo"
-            height="40px"
-          />
-        </div>
         <p className={classes.para}>
-          Copyright 2022 <span className={classes.highlight}>PolkaBridge</span>.
+          Copyright 2022 <span className={classes.highlight}>SleepSwap</span>.
           All Rights Reserved.
         </p>
       </div>

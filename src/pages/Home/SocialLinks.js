@@ -1,14 +1,6 @@
-import { Button, IconButton, Input, Tooltip } from "@material-ui/core";
+import { IconButton, Tooltip, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import {
-  Twitter,
-  Telegram,
-  GitHub,
-  Email,
-  Reddit,
-  Instagram,
-  YouTube,
-} from "@material-ui/icons";
+import { Twitter, Telegram, GitHub, Email } from "@material-ui/icons";
 import { Link } from "react-scroll";
 
 const useStyles = makeStyles((theme) => ({
@@ -161,7 +153,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "left",
     marginBottom: 10,
     cursor: "pointer",
-    // borderLeft: "1px solid rgba(212,4,126,0.5)",
+
     paddingLeft: 10,
   },
 }));
@@ -172,16 +164,27 @@ export default function SocialLinks() {
     <div className={classes.background}>
       <div className={classes.socialContainer}>
         <div className="container text-center" style={{ paddingTop: 30 }}>
-          <div>
-            <img src="./sleepLogo.webp" alt="logo" height="40px" />
-            <span style={{ color: "white" }}>SleepSwap</span>
-          </div>
+          <Typography
+            className={classes.title}
+            variant="body2"
+            noWrap
+            fontSize={40}
+          >
+            <img
+              src="https://cdn3d.iconscout.com/3d/free/thumb/free-squigly-globe-3494833-2926648@0.png?f=webp"
+              alt="logo"
+              height="30px"
+            />
+            <span style={{ color: "white", marginLeft: 5 }}>
+              <strong>Sleep</strong>Swap
+            </span>
+          </Typography>
           <div className="row flex-row justify-content-center mt-4">
             <div className="col-3 col-md-1 col-sm-3">
               {" "}
               <div className={classes.iconWrapper}>
                 <Tooltip title="Twitter" aria-label="add1">
-                  <a href="https://twitter.com/realpolkabridge">
+                  <a href="https://twitter.com/sleepswap">
                     <IconButton aria-label="Twitter">
                       <Twitter className={classes.icon} />
                     </IconButton>
@@ -192,7 +195,7 @@ export default function SocialLinks() {
             <div className="col-3 col-md-1 col-sm-3">
               <div className={classes.iconWrapper}>
                 <Tooltip title="Telegram">
-                  <a href="https://t.me/polkabridgegroup">
+                  <a href="https://t.me/sleepswap">
                     <IconButton aria-label="Telegram">
                       <Telegram className={classes.icon} />
                     </IconButton>
@@ -204,7 +207,7 @@ export default function SocialLinks() {
               {" "}
               <div className={classes.iconWrapper}>
                 <Tooltip title="Github">
-                  <a href="https://github.com/cyclese96">
+                  <a href="https://github.com/sleepswap">
                     <IconButton aria-label="Github">
                       <GitHub className={classes.icon} />
                     </IconButton>
@@ -228,7 +231,7 @@ export default function SocialLinks() {
             <div className="col-2 col-md-1 col-sm-3">
               <div className={classes.iconWrapper}>
                 <Tooltip title="Email">
-                  <a href="mailto:support@polkabridge.org">
+                  <a href="mailto:support@sleepswap.io">
                     <IconButton aria-label="Email">
                       <Email className={classes.icon} />
                     </IconButton>

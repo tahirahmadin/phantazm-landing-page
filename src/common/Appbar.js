@@ -5,12 +5,10 @@ import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
 import MenuIcon from "@material-ui/icons/Menu";
-import DotCircle from "../components/DotCircle";
 import CustomButton from "./CustomButton";
 import clsx from "clsx";
 import SwipeableDrawer from "@material-ui/core/SwipeableDrawer";
 import List from "@material-ui/core/List";
-import Divider from "@material-ui/core/Divider";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 import { Link } from "react-scroll";
@@ -18,6 +16,18 @@ import { Button, Container } from "@material-ui/core";
 import { Telegram } from "@material-ui/icons";
 
 const useStyles = makeStyles((theme) => ({
+  background: {
+    background: "black",
+    boxShadow: "none",
+    paddingLeft: "8%",
+    paddingRight: "8%",
+    paddingTop: 10,
+
+    [theme.breakpoints.down("md")]: {
+      paddingLeft: "2%",
+      paddingRight: "2%",
+    },
+  },
   button: {
     borderRadius: 30,
     background: "rgba(130, 71, 229, 0.7)",
@@ -39,6 +49,7 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     display: "none",
+    fontSize: 16,
     [theme.breakpoints.up("md")]: {
       display: "block",
     },
@@ -191,22 +202,24 @@ export default function PrimarySearchAppBar() {
 
   return (
     <div className={classes.grow}>
-      <AppBar
-        position="fixed"
-        style={{
-          background: "black",
-          boxShadow: "none",
-          paddingLeft: "10%",
-          paddingRight: "10%",
-          paddingTop: 10,
-        }}
-      >
+      <AppBar position="fixed" className={classes.background}>
         <Toolbar className="d-flex justify-content-between">
           <Link to="/">
             {" "}
-            <Typography className={classes.title} variant="h6" noWrap>
-              <img src="./sleepLogo.webp" alt="logo" height="50px" />
-              <span style={{ color: "white" }}>SleepSwap</span>
+            <Typography
+              className={classes.title}
+              variant="body2"
+              noWrap
+              fontSize={40}
+            >
+              <img
+                src="https://cdn3d.iconscout.com/3d/free/thumb/free-squigly-globe-3494833-2926648@0.png?f=webp"
+                alt="logo"
+                height="30px"
+              />
+              <span style={{ color: "white", marginLeft: 5 }}>
+                <strong>Sleep</strong>Swap
+              </span>
             </Typography>
           </Link>
           <div className="d-flex justify-content-end">
@@ -244,8 +257,14 @@ export default function PrimarySearchAppBar() {
           </div>
           <div className={classes.sectionMobile}>
             <div className="d-flex align-items-center">
-              <img src="./polkabridge.png" alt="logo" height="50px" />{" "}
-              <span style={{ color: "white" }}>SleepSwap</span>
+              <img
+                src="https://cdn3d.iconscout.com/3d/free/thumb/free-squigly-globe-3494833-2926648@0.png?f=webp"
+                alt="logo"
+                height="30px"
+              />
+              <span style={{ color: "white", marginLeft: 5 }}>
+                <strong>Sleep</strong>Swap
+              </span>
             </div>
 
             <div>
