@@ -23,6 +23,8 @@ import UpcomingProduct from "./UpcomingProduct";
 import PrimarySearchAppBar from "../../common/Appbar";
 import LaunchpadATH from "./LaunchpadATH";
 import TechPartners from "./TechPartners";
+import Partner from "./Partner";
+import Investors from "./Investors";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -96,8 +98,14 @@ export default function Home() {
         <section id="roadmap">
           <RoadmapNew />
         </section>
+        <section id="partner">
+          <Partner />
+        </section>
         <section id="team">
           <Team />
+        </section>
+        <section id="inverstors">
+          <Investors />
         </section>
 
         {/* <section id="partnerships">

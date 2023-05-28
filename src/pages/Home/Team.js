@@ -230,6 +230,34 @@ export default function Team() {
               </div>
             </Fade>{" "}
           </div>
+          <div className="col-6 col-md-2" align="center">
+            <Fade left>
+              <div className={classes.people}>
+                <img
+                  src="https://images.nightcafe.studio/jobs/mSC9EE8oUI21GbKYWBV8/mSC9EE8oUI21GbKYWBV8--4--d9mz0.jpg?tr=w-1600,c-at_max"
+                  alt="Rima"
+                  className={classes.avatar}
+                />
+                <h6 className={classes.title}>Qhsinat</h6>
+                <p className={classes.para}>Community Manager</p>
+
+                <Tooltip title="Telegram">
+                  <a href="https://t.me/">
+                    <IconButton aria-label="Telegram">
+                      <Telegram className={classes.icon} />
+                    </IconButton>
+                  </a>
+                </Tooltip>
+                <Tooltip title="LinkedIn">
+                  <a href="https://www.linkedin.com">
+                    <IconButton aria-label="LinkedIn">
+                      <LinkedIn className={classes.icon} />
+                    </IconButton>
+                  </a>
+                </Tooltip>
+              </div>
+            </Fade>{" "}
+          </div>
         </div>
         <div className="row  justify-content-center"> </div>
       </div>
