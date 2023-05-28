@@ -98,7 +98,8 @@ export default function Header() {
 
                     <div>
                       <a
-                        href="https://t.me"
+                        href="https://t.me/sleepswapio"
+                        target="_blank"
                         style={{ textDecoration: "none", padding: 5 }}
                       >
                         <Button className={classes.button}>

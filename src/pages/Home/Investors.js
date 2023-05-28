@@ -69,6 +69,10 @@ const useStyles = makeStyles((theme) => ({
     },
   },
 
+  avatar: {
+    filter: "brightness(0) invert(1)",
+    width: "140px",
+  },
   avatarSmall: {
     width: "120px",
     height: "120px",
@@ -97,7 +101,7 @@ export default function Investors() {
   return (
     <div className={classes.background}>
       <div className="text-center">
-        <h4 className={classes.heading}>Inverstors</h4>
+        <h4 className={classes.heading}>Supported By</h4>
 
         <div className="row flex-row justify-content-center mt-5">
           <div className={classes.investorsWrapper}>
@@ -105,8 +109,8 @@ export default function Investors() {
               <Fade left>
                 <div className={classes.people}>
                   <img
-                    src="https://uploads-ssl.webflow.com/6387b3e41c9a003cd56eaad4/6388e54f721d3aa86f86a3d5_Vector.svg"
-                    alt="Narmis"
+                    src="https://upload.wikimedia.org/wikipedia/commons/2/24/Polygon_blockchain_logo.png"
+                    alt="Polygon"
                     className={classes.avatar}
                   />
                 </div>
@@ -116,8 +120,20 @@ export default function Investors() {
               <Fade left>
                 <div className={classes.people}>
                   <img
-                    src="https://uploads-ssl.webflow.com/6387b3e41c9a003cd56eaad4/6388e54f721d3aa86f86a3d5_Vector.svg"
-                    alt="Narmis"
+                    src="https://api3.org/img/logo.png"
+                    alt="API3"
+                    className={classes.avatar}
+                    style={{ maxWidth: 100 }}
+                  />
+                </div>
+              </Fade>{" "}
+            </div>
+            <div className="col-6 col-md-2" align="center">
+              <Fade left>
+                <div className={classes.people}>
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Chainlink_Logo_Blue.svg/2560px-Chainlink_Logo_Blue.svg.png"
+                    alt="ChainLink"
                     className={classes.avatar}
                   />
                 </div>
@@ -127,41 +143,8 @@ export default function Investors() {
               <Fade left>
                 <div className={classes.people}>
                   <img
-                    src="https://uploads-ssl.webflow.com/6387b3e41c9a003cd56eaad4/6388e54f721d3aa86f86a3d5_Vector.svg"
-                    alt="Narmis"
-                    className={classes.avatar}
-                  />
-                </div>
-              </Fade>{" "}
-            </div>
-            <div className="col-6 col-md-2" align="center">
-              <Fade left>
-                <div className={classes.people}>
-                  <img
-                    src="https://uploads-ssl.webflow.com/6387b3e41c9a003cd56eaad4/6388e54f721d3aa86f86a3d5_Vector.svg"
-                    alt="Narmis"
-                    className={classes.avatar}
-                  />
-                </div>
-              </Fade>{" "}
-            </div>
-            <div className="col-6 col-md-2" align="center">
-              <Fade left>
-                <div className={classes.people}>
-                  <img
-                    src="https://uploads-ssl.webflow.com/6387b3e41c9a003cd56eaad4/6388e54f721d3aa86f86a3d5_Vector.svg"
-                    alt="Narmis"
-                    className={classes.avatar}
-                  />
-                </div>
-              </Fade>{" "}
-            </div>
-            <div className="col-6 col-md-2" align="center">
-              <Fade left>
-                <div className={classes.people}>
-                  <img
-                    src="https://uploads-ssl.webflow.com/6387b3e41c9a003cd56eaad4/6388e54f721d3aa86f86a3d5_Vector.svg"
-                    alt="Narmis"
+                    src="https://stakehound.com/wp-content/uploads/2021/03/transak_logo_transparent.png"
+                    alt="Transak"
                     className={classes.avatar}
                   />
                 </div>
@@ -175,9 +158,10 @@ export default function Investors() {
               <Fade left>
                 <div className={classes.people}>
                   <img
-                    src="https://uploads-ssl.webflow.com/6387b3e41c9a003cd56eaad4/6388e54f721d3aa86f86a3d5_Vector.svg"
-                    alt="Narmis"
+                    src="https://polkabridge.org/polkabridge.png"
+                    alt="PolkaBridge"
                     className={classes.avatar}
+                    style={{ maxWidth: 120 }}
                   />
                 </div>
               </Fade>{" "}
@@ -186,9 +170,10 @@ export default function Investors() {
               <Fade left>
                 <div className={classes.people}>
                   <img
-                    src="https://uploads-ssl.webflow.com/6387b3e41c9a003cd56eaad4/6388e54f721d3aa86f86a3d5_Vector.svg"
-                    alt="Narmis"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Uniswap_Logo_and_Wordmark.svg/2560px-Uniswap_Logo_and_Wordmark.svg.png"
+                    alt="Uniswap"
                     className={classes.avatar}
+                    style={{ maxWidth: 120 }}
                   />
                 </div>
               </Fade>{" "}
@@ -197,9 +182,10 @@ export default function Investors() {
               <Fade left>
                 <div className={classes.people}>
                   <img
-                    src="https://uploads-ssl.webflow.com/6387b3e41c9a003cd56eaad4/6388e54f721d3aa86f86a3d5_Vector.svg"
-                    alt="Narmis"
+                    src="https://seeklogo.com/images/T/the-graph-grt-logo-29502E1E1E-seeklogo.com.png"
+                    alt="GRT"
                     className={classes.avatar}
+                    style={{ maxWidth: 90 }}
                   />
                 </div>
               </Fade>{" "}
@@ -208,9 +194,10 @@ export default function Investors() {
               <Fade left>
                 <div className={classes.people}>
                   <img
-                    src="https://uploads-ssl.webflow.com/6387b3e41c9a003cd56eaad4/6388e54f721d3aa86f86a3d5_Vector.svg"
-                    alt="Narmis"
+                    src="https://cdn.worldvectorlogo.com/logos/amazon-web-services-1.svg"
+                    alt="AWS"
                     className={classes.avatar}
+                    style={{ maxWidth: 100 }}
                   />
                 </div>
               </Fade>{" "}

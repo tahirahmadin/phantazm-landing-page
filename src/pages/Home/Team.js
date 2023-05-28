@@ -234,7 +234,7 @@ export default function Team() {
             <Fade left>
               <div className={classes.people}>
                 <img
-                  src="https://images.nightcafe.studio/jobs/mSC9EE8oUI21GbKYWBV8/mSC9EE8oUI21GbKYWBV8--4--d9mz0.jpg?tr=w-1600,c-at_max"
+                  src="https://cdn.pixabay.com/photo/2023/02/24/00/41/ai-generated-7809880_1280.jpg"
                   alt="Rima"
                   className={classes.avatar}
                 />

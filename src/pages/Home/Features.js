@@ -382,8 +382,8 @@ export default function Features() {
                         style={{ height: 170 }}
                       >
                         <img
-                          src="https://cdn3d.iconscout.com/3d/premium/thumb/setting-5113987-4268987.png"
-                          height="120px"
+                          src="https://cdn3d.iconscout.com/3d/premium/thumb/secure-trading-8377710-6660776.png"
+                          height="90px"
                         />
                       </div>
                       <h5 className={classes.cardTitle}>

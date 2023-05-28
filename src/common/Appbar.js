@@ -212,12 +212,8 @@ export default function PrimarySearchAppBar() {
               noWrap
               fontSize={40}
             >
-              <img
-                src="https://cdn3d.iconscout.com/3d/free/thumb/free-squigly-globe-3494833-2926648@0.png?f=webp"
-                alt="logo"
-                height="30px"
-              />
-              <span style={{ color: "white", marginLeft: 5 }}>
+              <img src="/SleepSwap_Plain.png" alt="logo" height="45px" />
+              <span style={{ color: "white" }}>
                 <strong>Sleep</strong>Swap
               </span>
             </Typography>
@@ -249,20 +245,18 @@ export default function PrimarySearchAppBar() {
             </Link>
 
             <div className={classes.sectionDesktop}>
-              <Button className={classes.button}>
-                <Telegram />
-                Join community
-              </Button>
+              <a href="https://t.me/sleepswapio" target="_blank">
+                <Button className={classes.button}>
+                  <Telegram />
+                  Join community
+                </Button>
+              </a>
             </div>
           </div>
           <div className={classes.sectionMobile}>
             <div className="d-flex align-items-center">
-              <img
-                src="https://cdn3d.iconscout.com/3d/free/thumb/free-squigly-globe-3494833-2926648@0.png?f=webp"
-                alt="logo"
-                height="30px"
-              />
-              <span style={{ color: "white", marginLeft: 5 }}>
+              <img src="/SleepSwap_Plain.png" alt="logo" height="45px" />
+              <span style={{ color: "white" }}>
                 <strong>Sleep</strong>Swap
               </span>
             </div>

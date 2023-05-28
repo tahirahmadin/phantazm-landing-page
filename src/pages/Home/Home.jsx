@@ -98,9 +98,9 @@ export default function Home() {
         <section id="roadmap">
           <RoadmapNew />
         </section>
-        <section id="partner">
+        {/* <section id="partner">
           <Partner />
-        </section>
+        </section> */}
         <section id="team">
           <Team />
         </section>

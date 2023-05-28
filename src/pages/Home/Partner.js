@@ -30,11 +30,12 @@ const useStyles = makeStyles((theme) => ({
     color: "white",
     width: "auto",
     textAlign: "left",
-    fontSize: "52px",
-    lineHeight: 1.5,
+    fontSize: "48px",
+    lineHeight: 1.1,
     fontWeight: 600,
     verticalAlign: "middle",
     wordSpacing: "0px",
+    paddingBottom: 30,
 
     [theme.breakpoints.down("sm")]: {
       fontSize: 32,
@@ -117,7 +118,12 @@ export default function Partner() {
                     <div>
                       <Pulse>
                         <h1 className={classes.heading}>
-                          We lower the costs of sourcing liquidity
+                          We{" "}
+                          <span style={{ color: "rgba(130, 71, 229, 1)" }}>
+                            lower
+                          </span>{" "}
+                          the efforts <br />
+                          in crypto trading decisions
                         </h1>
                       </Pulse>
                     </div>
