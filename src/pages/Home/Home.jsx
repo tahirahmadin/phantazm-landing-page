@@ -25,6 +25,7 @@ import LaunchpadATH from "./LaunchpadATH";
 import TechPartners from "./TechPartners";
 import Partner from "./Partner";
 import Investors from "./Investors";
+import UpcomingProducts from "./UpcomingProduct";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -73,6 +74,10 @@ export default function Home() {
       <div className={classes.background}>
         <section id="header">
           <Header />
+        </section>
+
+        <section id="products">
+          <UpcomingProducts />
         </section>
         <section id="products">
           <Features />

@@ -30,11 +30,11 @@ const useStyles = makeStyles((theme) => ({
     color: "white",
     width: "auto",
     textAlign: "left",
-    fontSize: "52px",
-    lineHeight: 1.5,
+    lineHeight: 1.2,
     fontWeight: 600,
     verticalAlign: "middle",
     wordSpacing: "0px",
+    fontSize: "3.75rem",
 
     [theme.breakpoints.down("sm")]: {
       fontSize: 32,
@@ -42,29 +42,37 @@ const useStyles = makeStyles((theme) => ({
   },
 
   button: {
-    borderRadius: 30,
-    background: "rgba(130, 71, 229, 0.7)",
-    padding: "12px 40px 12px 40px",
-    color: "white",
-    width: "fit-content",
-    fontWeight: 600,
-    fontSize: 15,
     marginTop: 10,
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    textAlign: "center",
+    color: "white",
+    cursor: "pointer",
+    backgroundImage: "linear-gradient(#8a46ff,#6e38cc)",
+    borderRadius: "3rem",
+    padding: "10px 20px 10px 14px",
+    fontSize: ".85rem",
+    fontWeight: 500,
+    textDecoration: "none",
+    transition: "all .2s",
+    position: "relative",
+    textTransform: "capitalize",
+
     "&:hover": {
       background: "rgba(130, 71, 229, 0.9)",
     },
   },
   para: {
-    fontWeight: 400,
+    fontWeight: 500,
     verticalAlign: "baseline",
-    letterSpacing: "-0.8px",
-    margin: 0,
-    paddingTop: 10,
-    paddingBottom: 10,
+    letterSpacing: ".4px",
     textAlign: "left",
-    color: "#f9f9f9",
+    color: "#67666e",
+    fontSize: "1rem",
+
     [theme.breakpoints.down("sm")]: {
-      fontSize: 16,
+      fontSize: "0.9rem",
     },
   },
 }));
@@ -82,25 +90,20 @@ export default function Header() {
                 <div>
                   <Pulse>
                     <h1 className={classes.heading}>
-                      Presenting
-                      <br />
-                      An AI Powered,
-                      <br />
-                      <span style={{ color: "rgba(130, 71, 229, 1)" }}>
-                        Automated Trading
-                      </span>
-                      <br />
-                      Platform
+                      {/* Enhance your trading journey with our nextGen AI Trading
+                      Platform */}
+                      Take profits to sky with our next-Gen AI Trading Platform
                     </h1>
                     <p className={classes.para}>
-                      Join our community to get early access and free.
+                      Join our community and experience to our intelligent
+                      trading platform.
                     </p>
 
                     <div>
                       <a
                         href="https://t.me/sleepswapio"
                         target="_blank"
-                        style={{ textDecoration: "none", padding: 5 }}
+                        style={{ textDecoration: "none" }}
                       >
                         <Button className={classes.button}>
                           <Telegram style={{ marginRight: 10 }} /> Join Waitlist
@@ -110,11 +113,8 @@ export default function Header() {
                   </Pulse>
                 </div>
               </div>
-              <div className="col-md-5 d-flex align-items-center">
-                <img
-                  src="https://cdn3d.iconscout.com/3d/premium/thumb/cyberspace-5553460-4639104.png"
-                  style={{ maxWidth: "100%" }}
-                />
+              <div className="col-md-5 d-flex justify-content-center align-items-center">
+                <img src="accumulation.png" style={{ maxWidth: "100%" }} />
               </div>
             </div>
           </div>
