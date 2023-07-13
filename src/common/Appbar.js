@@ -29,13 +29,21 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   button: {
-    borderRadius: 30,
-    background: "rgba(130, 71, 229, 0.7)",
-    padding: "10px 20px 10px 20px",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    textAlign: "center",
     color: "white",
-    width: "fit-content",
-    fontWeight: 600,
-    fontSize: 15,
+    cursor: "pointer",
+    backgroundImage: "linear-gradient(#8a46ff,#6e38cc)",
+    borderRadius: "3rem",
+    padding: "10px 20px 10px 14px",
+    fontSize: ".85rem",
+    fontWeight: 500,
+    textDecoration: "none",
+    transition: "all .2s",
+    position: "relative",
+    textTransform: "capitalize",
 
     "&:hover": {
       background: "rgba(130, 71, 229, 0.9)",
@@ -157,12 +165,9 @@ export default function PrimarySearchAppBar() {
     >
       <List style={{ paddingTop: 30 }}>
         {[
-          { name: "Our Products", id: "products" },
-          { name: "Ecosystem", id: "ecosystem" },
-          { name: "Achievements", id: "achievements" },
-          { name: "$Sleep Token", id: "token" },
+          { name: "Our products", id: "products" },
           { name: "Roadmap", id: "roadmap" },
-          { name: "Advisors", id: "team" },
+          { name: "Partners", id: "investors" },
         ].map((tab, index) => (
           <Link
             activeClass="active"
@@ -181,18 +186,11 @@ export default function PrimarySearchAppBar() {
             </ListItem>
           </Link>
         ))}{" "}
-        <List>
-          <a href="https://polkabridge.org/ventures">
-            <ListItem button key="Ventures">
-              <ListItemText primary="Ventures" className={classes.menuTitle} />
-            </ListItem>
-          </a>
-        </List>
         {[{ name: "Ventures", id: "/ventures" }].map((tab, index) => (
           <ListItem button key={tab.name} style={{ paddingLeft: 30 }}>
             <CustomButton
-              title={"Launch App"}
-              link={"https://swap.polkabridge.org"}
+              title={"Join Waitlist"}
+              link={"https://t.me/sleepswapio"}
             ></CustomButton>
           </ListItem>
         ))}
@@ -221,6 +219,18 @@ export default function PrimarySearchAppBar() {
           <div className="d-flex justify-content-end">
             <Link
               activeClass="active"
+              to="products"
+              smooth={true}
+              offset={0}
+              duration={500}
+              delay={0}
+            >
+              <Typography className={classes.tabs} variant="body1">
+                Our products
+              </Typography>
+            </Link>
+            <Link
+              activeClass="active"
               to="roadmap"
               smooth={true}
               offset={0}
@@ -233,14 +243,14 @@ export default function PrimarySearchAppBar() {
             </Link>
             <Link
               activeClass="active"
-              to="team"
+              to="investors"
               smooth={true}
               offset={0}
               duration={500}
               delay={0}
             >
               <Typography className={classes.tabs} variant="body1">
-                Advisors
+                Partners
               </Typography>
             </Link>
 

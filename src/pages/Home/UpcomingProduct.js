@@ -1,31 +1,26 @@
-import { Box, Button, Card, Hidden } from "@material-ui/core";
+import { Box } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import {
-  AccountTree,
-  CalendarToday,
-  ChevronLeft,
-  ChevronRight,
-} from "@material-ui/icons";
-import { Fade } from "react-reveal";
+import { CalendarToday } from "@material-ui/icons";
 import Pulse from "react-reveal/Pulse";
-import Lottie from "lottie-react";
 
 const useStyles = makeStyles((theme) => ({
   background: {
-    paddingTop: 130,
-    paddingBottom: 130,
+    paddingTop: 80,
+    paddingBottom: 80,
     paddingLeft: "5%",
     paddingRight: "5%",
     backgroundColor: "transparent",
     height: "100%",
     // borderBottom: "200px solid green",
     [theme.breakpoints.down("sm")]: {
-      paddingTop: 0,
-      paddingBottom: 70,
+      paddingTop: 30,
+      paddingBottom: 30,
       textAlign: "center",
+      minHeight: 300,
     },
   },
   card: {
+    borderRadius: 21,
     width: 1100,
     marginTop: 30,
     backgroundColor: "#171320",
@@ -34,10 +29,13 @@ const useStyles = makeStyles((theme) => ({
     backgroundRepeat: "no-repeat",
     backgroundSize: "auto",
     padding: "60px 50px 60px 80px",
+    [theme.breakpoints.down("sm")]: {
+      padding: 25,
+    },
   },
   featureCard: {
     backgroundColor: "#171320",
-    backgroundImage: `url('https://cimg.co/news/112541/272082/ai.jpg')`,
+    backgroundImage: `url('https://outcry.io/wp-content/uploads/2019/05/rocket-750x365.jpg')`,
     backgroundPosition: "center center",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
@@ -53,7 +51,9 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: 1.2,
 
     [theme.breakpoints.down("sm")]: {
-      fontSize: "32px",
+      fontSize: "1.5rem",
+      lineHeight: 1.4,
+      textAlign: "center",
     },
   },
 
@@ -92,7 +92,7 @@ export default function UpcomingProducts() {
     <div className={classes.background}>
       <div className={classes.container}>
         <Pulse>
-          <h1 className={classes.heading}>Important Dates</h1>
+          <h1 className={classes.heading}>Upcoming milestones</h1>
         </Pulse>
         <div className="d-flex justify-content-center">
           <Box className={classes.card}>
@@ -118,7 +118,7 @@ export default function UpcomingProducts() {
                     <CalendarToday style={{ fontSize: 18, marginRight: 7 }} />
                     Launch date
                   </p>
-                  <h1 className="gradient-text-big">19</h1>
+                  <h1 className="gradient-text-big">15</h1>
                   <p
                     style={{
                       color: "white",
@@ -129,15 +129,23 @@ export default function UpcomingProducts() {
                       paddingLeft: 10,
                     }}
                   >
-                    JULY 2023
+                    AUGUST 2023
                   </p>
                 </Box>
               </div>
               <div className="col-md-6">
-                <Card
+                <div className="d-flex align-items-center justify-content-center text-center">
+                  <img
+                    src="accumulation.png"
+                    alt="accumulate"
+                    // width="200px"
+                    style={{ borderRadius: 21, maxHeight: 360 }}
+                  />
+                </div>
+                {/* <Card
                   className={classes.featureCard}
                   style={{ backgroundColor: "#F7F0E7" }}
-                ></Card>
+                ></Card> */}
               </div>
             </div>
           </Box>

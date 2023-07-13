@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Button, useMediaQuery } from "@material-ui/core";
+import { Box, Button, useMediaQuery } from "@material-ui/core";
 import { Telegram } from "@material-ui/icons";
 import Pulse from "react-reveal/Pulse";
 import theme from "../../theme";
@@ -37,12 +37,21 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "3.75rem",
 
     [theme.breakpoints.down("sm")]: {
-      fontSize: 32,
+      fontSize: "2.0rem",
+      lineHeight: 1.4,
+      textAlign: "center",
     },
   },
-
-  button: {
+  buttonWrapper: {
     marginTop: 10,
+    marginBottom: 10,
+    display: "flex",
+    justifyContent: "flex-start",
+    [theme.breakpoints.down("sm")]: {
+      justifyContent: "center",
+    },
+  },
+  button: {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
@@ -73,6 +82,8 @@ const useStyles = makeStyles((theme) => ({
 
     [theme.breakpoints.down("sm")]: {
       fontSize: "0.9rem",
+      textAlign: "center",
+      paddingTop: 10,
     },
   },
 }));
@@ -99,7 +110,7 @@ export default function Header() {
                       trading platform.
                     </p>
 
-                    <div>
+                    <Box className={classes.buttonWrapper}>
                       <a
                         href="https://t.me/sleepswapio"
                         target="_blank"
@@ -109,12 +120,17 @@ export default function Header() {
                           <Telegram style={{ marginRight: 10 }} /> Join Waitlist
                         </Button>
                       </a>
-                    </div>
+                    </Box>
                   </Pulse>
                 </div>
               </div>
               <div className="col-md-5 d-flex justify-content-center align-items-center">
-                <img src="accumulation.png" style={{ maxWidth: "100%" }} />
+                {/* <img src="accumulation.png" style={{ maxWidth: "100%" }} /> */}
+                <img
+                  src="Accumulate_Screen.png"
+                  height="100%"
+                  style={{ borderRadius: 21, maxHeight: 600 }}
+                />
               </div>
             </div>
           </div>

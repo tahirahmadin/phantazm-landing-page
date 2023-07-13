@@ -1,13 +1,14 @@
-import { Button, Card, Hidden } from "@material-ui/core";
+import { Button, Card, Hidden, useMediaQuery } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { ChevronLeft, ChevronRight } from "@material-ui/icons";
 import { useState } from "react";
-import Pulse from "react-reveal/Pulse";
+import theme from "../../theme";
 
 const useStyles = makeStyles((theme) => ({
   background: {
-    paddingTop: 160,
-    paddingBottom: 100,
+    paddingTop: 80,
+    paddingBottom: 80,
+    minHeight: 600,
     paddingLeft: "5%",
     paddingRight: "5%",
     backgroundColor: "transparent",
@@ -15,9 +16,10 @@ const useStyles = makeStyles((theme) => ({
 
     // borderBottom: "200px solid green",
     [theme.breakpoints.down("sm")]: {
-      textAlign: "center",
       paddingTop: 30,
       paddingBottom: 30,
+      textAlign: "center",
+      minHeight: 300,
     },
   },
   container: {
@@ -87,9 +89,9 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "left",
     paddingBottom: 10,
     [theme.breakpoints.down("sm")]: {
+      fontSize: "1.5rem",
+      lineHeight: 1.4,
       textAlign: "center",
-      lineHeight: 1.2,
-      fontSize: "32px",
     },
   },
   featurePara: {
@@ -226,6 +228,7 @@ const useStyles = makeStyles((theme) => ({
 export default function Features() {
   const classes = useStyles();
   const [x, setX] = useState(window.innerWidth > 400 ? 0 : 0);
+  const md = useMediaQuery(theme.breakpoints.down("sm"));
 
   const goRight = () => {
     x === -100 * ([1, 2, 3, 4].length - 3) ? setX(0) : setX(x - 100);
@@ -257,13 +260,26 @@ export default function Features() {
         <div className={classes.container}>
           <div className="container d-md-flex align-items-center justify-content-evenly mt-5">
             <div className="col-md-3">
-              <h5 className={classes.featureTitle}>
-                Product <br />
-                Highlights
-              </h5>
-              <p className={classes.featurePara}>
-                Increase your winning odds with Artificial Intelligence
-              </p>
+              {!md && (
+                <h5 className={classes.featureTitle}>
+                  Product <br />
+                  Highlights
+                </h5>
+              )}
+              {md && (
+                <h5
+                  className={classes.featureTitle}
+                  style={{ marginBottom: 10 }}
+                >
+                  Product Highlights
+                </h5>
+              )}
+              <Hidden smDown>
+                <p className={classes.featurePara}>
+                  Increase your winning odds with Artificial Intelligence
+                </p>
+              </Hidden>
+
               <Hidden smDown>
                 {" "}
                 <div className="mt-5">

@@ -7,6 +7,7 @@ const useStyles = makeStyles((theme) => ({
   background: {
     paddingTop: 80,
     paddingBottom: 80,
+    minHeight: 600,
     paddingLeft: "4%",
     paddingRight: "4%",
     backgroundColor: "transparent",
@@ -16,15 +17,17 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   heading: {
+    fontWeight: 700,
+    verticalAlign: "baseline",
+    margin: 0,
+    fontSize: 42,
     color: "white",
     textAlign: "center",
-    fontSize: 42,
-    fontWeight: 700,
-    verticalAlign: "middle",
-    wordSpacing: "0px",
-
+    paddingBottom: 10,
     [theme.breakpoints.down("sm")]: {
-      fontSize: "32px",
+      fontSize: "1.5rem",
+      lineHeight: 1.4,
+      textAlign: "center",
     },
   },
   para: {
@@ -89,6 +92,8 @@ const useStyles = makeStyles((theme) => ({
     paddingRight: 100,
     justifyContent: "center",
     alignItems: "center",
+    width: "100%",
+    width: 1000,
   },
   [theme.breakpoints.down("sm")]: {
     paddingLeft: 0,
@@ -103,58 +108,12 @@ export default function Investors() {
       <div className="text-center">
         <h4 className={classes.heading}>Supported By</h4>
 
-        <div className="row flex-row justify-content-center mt-5">
-          <div className={classes.investorsWrapper}>
-            <div className="col-6 col-md-2" align="center">
-              <Fade left>
-                <div className={classes.people}>
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/2/24/Polygon_blockchain_logo.png"
-                    alt="Polygon"
-                    className={classes.avatar}
-                  />
-                </div>
-              </Fade>{" "}
-            </div>
-            <div className="col-6 col-md-2" align="center">
-              <Fade left>
-                <div className={classes.people}>
-                  <img
-                    src="https://api3.org/img/logo.png"
-                    alt="API3"
-                    className={classes.avatar}
-                    style={{ maxWidth: 100 }}
-                  />
-                </div>
-              </Fade>{" "}
-            </div>
-            <div className="col-6 col-md-2" align="center">
-              <Fade left>
-                <div className={classes.people}>
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Chainlink_Logo_Blue.svg/2560px-Chainlink_Logo_Blue.svg.png"
-                    alt="ChainLink"
-                    className={classes.avatar}
-                  />
-                </div>
-              </Fade>{" "}
-            </div>
-            <div className="col-6 col-md-2" align="center">
-              <Fade left>
-                <div className={classes.people}>
-                  <img
-                    src="https://stakehound.com/wp-content/uploads/2021/03/transak_logo_transparent.png"
-                    alt="Transak"
-                    className={classes.avatar}
-                  />
-                </div>
-              </Fade>{" "}
-            </div>
-          </div>
-        </div>
-        <div className="row flex-row justify-content-center mt-5">
-          <div className={classes.investorsWrapper}>
-            <div className="col-6 col-md-2" align="center">
+        <div className="d-flex justify-content-center">
+          <div
+            className="row flex-row justify-content-center align-items-center mt-5 px-4"
+            style={{ maxWidth: 1000 }}
+          >
+            <div className="col-6 col-md-3 py-4" align="center">
               <Fade left>
                 <div className={classes.people}>
                   <img
@@ -166,7 +125,7 @@ export default function Investors() {
                 </div>
               </Fade>{" "}
             </div>
-            <div className="col-6 col-md-2" align="center">
+            <div className="col-6 col-md-3 py-4" align="center">
               <Fade left>
                 <div className={classes.people}>
                   <img
@@ -178,7 +137,7 @@ export default function Investors() {
                 </div>
               </Fade>{" "}
             </div>
-            <div className="col-6 col-md-2" align="center">
+            <div className="col-6 col-md-3 py-4" align="center">
               <Fade left>
                 <div className={classes.people}>
                   <img
@@ -190,7 +149,7 @@ export default function Investors() {
                 </div>
               </Fade>{" "}
             </div>
-            <div className="col-6 col-md-2" align="center">
+            <div className="col-6 col-md-3 py-4" align="center">
               <Fade left>
                 <div className={classes.people}>
                   <img
@@ -202,8 +161,54 @@ export default function Investors() {
                 </div>
               </Fade>{" "}
             </div>
+            <div className="col-6 col-md-3 py-4" align="center">
+              <Fade left>
+                <div className={classes.people}>
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/2/24/Polygon_blockchain_logo.png"
+                    alt="Polygon"
+                    className={classes.avatar}
+                  />
+                </div>
+              </Fade>{" "}
+            </div>
+            <div className="col-6 col-md-3 py-4" align="center">
+              <Fade left>
+                <div className={classes.people}>
+                  <img
+                    src="https://api3.org/img/logo.png"
+                    alt="API3"
+                    className={classes.avatar}
+                    style={{ maxWidth: 100 }}
+                  />
+                </div>
+              </Fade>{" "}
+            </div>
+            <div className="col-6 col-md-3 py-4" align="center">
+              <Fade left>
+                <div className={classes.people}>
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Chainlink_Logo_Blue.svg/2560px-Chainlink_Logo_Blue.svg.png"
+                    alt="ChainLink"
+                    className={classes.avatar}
+                  />
+                </div>
+              </Fade>{" "}
+            </div>
+            <div className="col-6 col-md-3 py-4" align="center">
+              <Fade left>
+                <div className={classes.people}>
+                  <img
+                    src="https://images.web3auth.io/web3auth-logo.svg"
+                    alt="Transak"
+                    className={classes.avatar}
+                  />
+                </div>
+              </Fade>{" "}
+            </div>
           </div>
         </div>
+        <div className="row flex-row justify-content-center align-items-center mt-5"></div>
       </div>
     </div>
   );

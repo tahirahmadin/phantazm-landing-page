@@ -1,7 +1,6 @@
 import { IconButton, Tooltip, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import { Twitter, Telegram, GitHub, Email, LinkedIn } from "@material-ui/icons";
-import { Link } from "react-scroll";
+import { Twitter, Telegram, GitHub, LinkedIn } from "@material-ui/icons";
 
 const useStyles = makeStyles((theme) => ({
   background: {
@@ -175,7 +174,7 @@ export default function SocialLinks() {
               <strong>Sleep</strong>Swap
             </span>
           </Typography>
-          <div className="row flex-row justify-content-center mt-4">
+          <div className="row flex-row justify-content-center mt-1">
             <div className="col-3 col-md-1 col-sm-3">
               {" "}
               <div className={classes.iconWrapper}>
@@ -226,22 +225,9 @@ export default function SocialLinks() {
                 </Tooltip>
               </div>
             </div>
-
-            <div className="col-2 col-md-1 col-sm-3">
-              <div className={classes.iconWrapper}>
-                <Tooltip title="Email">
-                  <a href="mailto:support@sleepswap.io" target="_blank">
-                    <IconButton aria-label="Email">
-                      <Email className={classes.icon} />
-                    </IconButton>
-                  </a>
-                </Tooltip>
-              </div>
-            </div>
           </div>
           <p className={classes.para}>
-            Copyright 2023 <span className={classes.highlight}>SleepSwap</span>.
-            All Rights Reserved.
+            Copyright 2023 <strong>SleepSwap</strong>. All Rights Reserved.
           </p>
         </div>
       </div>
