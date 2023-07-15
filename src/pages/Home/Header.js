@@ -77,7 +77,7 @@ const useStyles = makeStyles((theme) => ({
     verticalAlign: "baseline",
     letterSpacing: ".4px",
     textAlign: "left",
-    color: "#67666e",
+    color: "#bdbdbd",
     fontSize: "1rem",
 
     [theme.breakpoints.down("sm")]: {

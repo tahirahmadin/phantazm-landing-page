@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundPosition: "50%",
     backgroundRepeat: "no-repeat",
     backgroundSize: "auto",
-    padding: "60px 50px 60px 80px",
+    padding: "40px 40px 40px 40px",
     [theme.breakpoints.down("sm")]: {
       padding: 25,
     },
@@ -58,11 +58,11 @@ const useStyles = makeStyles((theme) => ({
   },
 
   para: {
-    fontWeight: 500,
+    fontWeight: 400,
     verticalAlign: "baseline",
     letterSpacing: ".4px",
     textAlign: "left",
-    color: "#bdbdbd",
+    color: "#e5e5e5",
     fontSize: "1rem",
 
     [theme.breakpoints.down("sm")]: {
@@ -90,66 +90,82 @@ export default function UpcomingProducts() {
 
   return (
     <div className={classes.background}>
-      <div className={classes.container}>
-        <Pulse>
-          <h1 className={classes.heading}>Upcoming milestones</h1>
-        </Pulse>
-        <div className="d-flex justify-content-center">
-          <Box className={classes.card}>
-            <div className="row">
-              <div className="col-md-6">
-                <h1 className={classes.subheading}>Beta 1.0 launch!</h1>
-                <p className={classes.para}>
-                  A revolutionary AI trading platform beta launch is coming.
+      <Pulse>
+        <h1 className={classes.heading}>Upcoming milestones</h1>
+      </Pulse>
+      <div className="d-flex justify-content-center">
+        <Box className={classes.card}>
+          <div className="row">
+            <div className="col-md-5">
+              <h1 className={classes.subheading}>Beta 1.0 launch!</h1>
+              <p className={classes.para}>
+                A revolutionary AI trading platform beta launch is coming.
+              </p>
+              <Box>
+                <p
+                  style={{
+                    color: "white",
+                    textAlign: "left",
+                    fontSize: "1.1rem",
+                    fontWeight: 600,
+                    lineHeight: 1.2,
+                    paddingLeft: 10,
+                    marginTop: 30,
+                    marginLeft: -10,
+                  }}
+                >
+                  <CalendarToday style={{ fontSize: 21, marginRight: 7 }} />
+                  Launch date
                 </p>
-                <Box>
-                  <p
+                <h1 className="gradient-text-big">
+                  15{" "}
+                  <span
                     style={{
-                      color: "white",
-                      textAlign: "left",
-                      fontSize: "1.0rem",
-                      fontWeight: 600,
-                      lineHeight: 1.2,
-                      paddingLeft: 10,
-                      marginTop: 30,
-                      marginLeft: -10,
+                      fontSize: 28,
+                      textTransform: "lowercase",
+                      marginLeft: -20,
                     }}
                   >
-                    <CalendarToday style={{ fontSize: 18, marginRight: 7 }} />
-                    Launch date
-                  </p>
-                  <h1 className="gradient-text-big">15</h1>
-                  <p
-                    style={{
-                      color: "white",
-                      textAlign: "left",
-                      fontSize: "1.0rem",
-                      fontWeight: 600,
-                      lineHeight: 1.2,
-                      paddingLeft: 10,
-                    }}
-                  >
-                    AUGUST 2023
-                  </p>
-                </Box>
+                    th
+                  </span>
+                </h1>
+                <p
+                  style={{
+                    color: "white",
+                    textAlign: "left",
+                    fontSize: "1.0rem",
+                    fontWeight: 600,
+                    lineHeight: 1.2,
+                    paddingLeft: 10,
+                  }}
+                >
+                  AUGUST 2023
+                </p>
+              </Box>
+            </div>
+            <div className="col-md-7">
+              <div className="d-flex align-items-center justify-content-center text-center">
+                <img
+                  src="platform.png"
+                  alt="accumulate"
+                  width="100%"
+                  style={{
+                    borderRadius: 21,
+                    maxHeight: 360,
+                    backgroundColor: "#414141",
+                    backgroundImage: `linear-gradient(#7b3fe4, #a726c1)`,
+
+                    padding: 5,
+                  }}
+                />
               </div>
-              <div className="col-md-6">
-                <div className="d-flex align-items-center justify-content-center text-center">
-                  <img
-                    src="accumulation.png"
-                    alt="accumulate"
-                    // width="200px"
-                    style={{ borderRadius: 21, maxHeight: 360 }}
-                  />
-                </div>
-                {/* <Card
+              {/* <Card
                   className={classes.featureCard}
                   style={{ backgroundColor: "#F7F0E7" }}
                 ></Card> */}
-              </div>
             </div>
-          </Box>
-        </div>
+          </div>
+        </Box>
       </div>
     </div>
   );

@@ -1,16 +1,25 @@
-import { Button, Card, Hidden, useMediaQuery } from "@material-ui/core";
+import {
+  Box,
+  Button,
+  Card,
+  Grid,
+  Hidden,
+  Typography,
+  useMediaQuery,
+} from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { ChevronLeft, ChevronRight } from "@material-ui/icons";
 import { useState } from "react";
 import theme from "../../theme";
+import Pulse from "react-reveal/Pulse";
 
 const useStyles = makeStyles((theme) => ({
   background: {
     paddingTop: 80,
     paddingBottom: 80,
     minHeight: 600,
-    paddingLeft: "5%",
-    paddingRight: "5%",
+    paddingLeft: "10%",
+    paddingRight: "10%",
     backgroundColor: "transparent",
     height: "100%",
 
@@ -22,10 +31,33 @@ const useStyles = makeStyles((theme) => ({
       minHeight: 300,
     },
   },
-  container: {
-    marginTop: 0,
-  },
+  heading: {
+    color: "white",
+    textAlign: "left",
+    fontSize: "2.5rem",
+    fontWeight: "500",
+    lineHeight: 1.4,
 
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "1.5rem",
+      lineHeight: 1.4,
+      textAlign: "center",
+    },
+  },
+  featureCardMain: {
+    backgroundColor: "#171320",
+    borderRadius: 14,
+    height: 320,
+    width: "100%",
+
+    backgroundSize: "contain",
+    backgroundPosition: "right bottom",
+    backgroundRepeat: "no-repeat",
+    padding: 28,
+    [theme.breakpoints.down("sm")]: {
+      height: 480,
+    },
+  },
   para: {
     textAlign: "center",
     width: "70%",
@@ -257,7 +289,146 @@ export default function Features() {
       ></div>
 
       <div className={classes.background}>
-        <div className={classes.container}>
+        <Pulse>
+          <h1 className={classes.heading}>Product highlights</h1>
+        </Pulse>
+        <Grid container spacing={4} style={{ marginTop: 7 }}>
+          <Grid item md={6} sm={12} xs={12}>
+            <Box
+              className={classes.featureCardMain}
+              style={{
+                backgroundImage: `url(https://cdn3d.iconscout.com/3d/premium/thumb/man-doing-online-accounting-7068888-5751896.png)`,
+              }}
+            >
+              <Box maxWidth={250}>
+                <Typography
+                  variant="h5"
+                  style={{
+                    fontSize: 28,
+                    fontWeight: 600,
+                    color: "#8a46ff",
+                    textAlign: "left",
+                  }}
+                >
+                  Automated Trading Strategies{" "}
+                  <span
+                    style={{
+                      fontSize: 28,
+                      fontWeight: 400,
+                      color: "white",
+                      textAlign: "left",
+                    }}
+                  >
+                    {" "}
+                    to bring higher returns and saving time{" "}
+                  </span>
+                </Typography>
+              </Box>
+            </Box>
+          </Grid>
+          <Grid item md={6} sm={12} xs={12}>
+            <Box
+              className={classes.featureCardMain}
+              style={{
+                backgroundImage: `url(https://cdn3d.iconscout.com/3d/premium/thumb/unboxing-crypto-6217470-5102407.png)`,
+              }}
+            >
+              <Box maxWidth={250}>
+                <Typography
+                  variant="h5"
+                  style={{
+                    fontSize: 28,
+                    fontWeight: 600,
+                    color: "#8a46ff",
+                    textAlign: "left",
+                  }}
+                >
+                  Curated Tokens Bucket
+                  <span
+                    style={{
+                      fontSize: 28,
+                      fontWeight: 400,
+                      color: "white",
+                      textAlign: "left",
+                    }}
+                  >
+                    {" "}
+                    for 1-click investment into tokens selected by top traders
+                  </span>
+                </Typography>
+              </Box>
+            </Box>
+          </Grid>
+        </Grid>
+        <Grid container spacing={4} style={{ marginTop: 7 }}>
+          <Grid item md={6} sm={12} xs={12}>
+            <Box
+              className={classes.featureCardMain}
+              style={{
+                backgroundImage: `url(https://cdn3d.iconscout.com/3d/premium/thumb/electric-bulb-7971760-6397909.png)`,
+              }}
+            >
+              <Box maxWidth={250}>
+                <Typography
+                  variant="h5"
+                  style={{
+                    fontSize: 28,
+                    fontWeight: 600,
+                    color: "#8a46ff",
+                    textAlign: "left",
+                  }}
+                >
+                  Crypto industry insights
+                  <span
+                    style={{
+                      fontSize: 28,
+                      fontWeight: 400,
+                      color: "white",
+                      textAlign: "left",
+                    }}
+                  >
+                    {" "}
+                    to keep you updated with latest trends
+                  </span>
+                </Typography>
+              </Box>
+            </Box>
+          </Grid>
+          <Grid item md={6} sm={12} xs={12}>
+            <Box
+              className={classes.featureCardMain}
+              style={{
+                backgroundImage: `url(https://cdn3d.iconscout.com/3d/premium/thumb/startup-portfolio-5442588-4568148.png)`,
+              }}
+            >
+              <Box maxWidth={250}>
+                <Typography
+                  variant="h5"
+                  style={{
+                    fontSize: 28,
+                    fontWeight: 600,
+                    color: "#8a46ff",
+                    textAlign: "left",
+                  }}
+                >
+                  Access to top portfolio
+                  <span
+                    style={{
+                      fontSize: 28,
+                      fontWeight: 400,
+                      color: "white",
+                      textAlign: "left",
+                    }}
+                  >
+                    {" "}
+                    to help you in your trading decisions
+                  </span>
+                </Typography>
+              </Box>
+            </Box>
+          </Grid>
+        </Grid>
+        {/* <div className={classes.container}>
           <div className="container d-md-flex align-items-center justify-content-evenly mt-5">
             <div className="col-md-3">
               {!md && (
@@ -460,7 +631,7 @@ export default function Features() {
               </Hidden>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

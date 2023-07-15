@@ -79,20 +79,20 @@ const useStyles = makeStyles((theme) => ({
   },
 
   card: {
-    padding: 14,
+    padding: 21,
     width: "fit-content",
     maxWidth: 250,
     height: "fit-content",
     minHeight: 300,
     paddingBottom: 20,
-    borderRadius: 30,
-    backgroundColor: "rgba(0,0,0,0.1)",
-    border: "2px solid #2F3A4D",
+    borderRadius: 21,
+    backgroundColor: "#171320",
+
     boxShadow: "0px 50px 200px rgba(0, 0, 0, 0.5)",
 
     [theme.breakpoints.down("sm")]: {
-      paddingLeft: 0,
-      paddingRight: 0,
+      paddingLeft: 10,
+      paddingRight: 10,
       width: "100%",
       height: "100%",
     },
@@ -111,7 +111,7 @@ export default function RoadmapNew() {
           container
           spacing={2}
           width={"100%"}
-          style={{ marginTop: 30, maxWidth: 1000 }}
+          style={{ marginTop: 20, maxWidth: 1000 }}
         >
           <Grid
             item
