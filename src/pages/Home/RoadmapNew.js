@@ -121,17 +121,18 @@ export default function RoadmapNew() {
             style={{ display: "flex", justifyContent: "center" }}
           >
             <Card className={classes.card}>
-              <h5 className={classes.quarterTitle}>Q2 - 2023</h5>
+              <h5 className={classes.quarterTitle}>Q3 - 2023</h5>
+
               <div
                 className="d-flex justify-content-center align-items-center"
                 style={{ height: 120 }}
               >
                 <img
-                  src="https://cdn3d.iconscout.com/3d/premium/thumb/delivery-box-5340240-4465979.png"
-                  height="60px"
+                  src="https://cdn3d.iconscout.com/3d/premium/thumb/dollar-coin-4604543-3816872.png?f=webp"
+                  height="75px"
                 />
               </div>
-              <h5 className={classes.cardTitle}>MVP Ready</h5>
+              <h5 className={classes.cardTitle}>Token Launch</h5>
               <div className="mt-3">
                 <li className={classes.li}>Minimum viable product is ready</li>
                 <li className={classes.li}>
@@ -148,23 +149,23 @@ export default function RoadmapNew() {
             style={{ display: "flex", justifyContent: "center" }}
           >
             <Card className={classes.card}>
-              <h5 className={classes.quarterTitle}>Q3 - 2023</h5>
+              <h5 className={classes.quarterTitle}>Q4 - 2023</h5>
               <div
                 className="d-flex justify-content-center align-items-center"
                 style={{ height: 120 }}
               >
                 <img
-                  src="https://cdn3d.iconscout.com/3d/premium/thumb/dollar-coin-4604543-3816872.png?f=webp"
-                  height="75px"
+                  src="https://cdn3d.iconscout.com/3d/premium/thumb/delivery-box-5340240-4465979.png"
+                  height="60px"
                 />
               </div>
-              <h5 className={classes.cardTitle}>Token Launch</h5>
+              <h5 className={classes.cardTitle}>Mainnet Release</h5>
               <div className="mt-3">
                 <li className={classes.li}>
-                  Token launch at top IDO platforms
+                  Operational lending and borrowing product will be live.
                 </li>
                 <li className={classes.li}>
-                  Testnet release on Polygon testnet
+                  Briding 10M+ Liquidity to our protocol
                 </li>
               </div>
             </Card>{" "}
@@ -177,7 +178,7 @@ export default function RoadmapNew() {
             style={{ display: "flex", justifyContent: "center" }}
           >
             <Card className={classes.card}>
-              <h5 className={classes.quarterTitle}>Q4 - 2023</h5>
+              <h5 className={classes.quarterTitle}>Scaling</h5>
               <div
                 className="d-flex justify-content-center align-items-center"
                 style={{ height: 120 }}
@@ -189,10 +190,10 @@ export default function RoadmapNew() {
               </div>
               <h5 className={classes.cardTitle}>Mainnet Release</h5>
               <div className="mt-3">
+                <li className={classes.li}>MultiChain Lending and Borrowing</li>
                 <li className={classes.li}>
-                  Releasing mainnet for atleast 5 strategies.
+                  Institution and stable coin release.
                 </li>
-                <li className={classes.li}>Listing token on Top exchanges.</li>
               </div>
             </Card>
           </Grid>

@@ -117,8 +117,19 @@ export default function Investors() {
               <Fade left>
                 <div className={classes.people}>
                   <img
-                    src="https://polkabridge.org/polkabridge.png"
-                    alt="PolkaBridge"
+                    src="https://upload.wikimedia.org/wikipedia/commons/2/24/Polygon_blockchain_logo.png"
+                    alt="Polygon"
+                    className={classes.avatar}
+                  />
+                </div>
+              </Fade>{" "}
+            </div>
+            <div className="col-6 col-md-3 py-4" align="center">
+              <Fade left>
+                <div className={classes.people}>
+                  <img
+                    src="https://editor.analyticsvidhya.com/uploads/70500Aave-Crypto-Logo-PNG.png"
+                    alt="Aave"
                     className={classes.avatar}
                     style={{ maxWidth: 120 }}
                   />
@@ -161,17 +172,7 @@ export default function Investors() {
                 </div>
               </Fade>{" "}
             </div>
-            <div className="col-6 col-md-3 py-4" align="center">
-              <Fade left>
-                <div className={classes.people}>
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/2/24/Polygon_blockchain_logo.png"
-                    alt="Polygon"
-                    className={classes.avatar}
-                  />
-                </div>
-              </Fade>{" "}
-            </div>
+
             <div className="col-6 col-md-3 py-4" align="center">
               <Fade left>
                 <div className={classes.people}>

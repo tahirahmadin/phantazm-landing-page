@@ -97,9 +97,9 @@ export default function UpcomingProducts() {
         <Box className={classes.card}>
           <div className="row">
             <div className="col-md-5">
-              <h1 className={classes.subheading}>Beta 1.0 launch!</h1>
+              <h1 className={classes.subheading}>Token Launch!</h1>
               <p className={classes.para}>
-                A revolutionary AI trading platform beta launch is coming.
+                we are launching out token for public sale.
               </p>
               <Box>
                 <p
@@ -118,7 +118,7 @@ export default function UpcomingProducts() {
                   Launch date
                 </p>
                 <h1 className="gradient-text-big">
-                  15{" "}
+                  08{" "}
                   <span
                     style={{
                       fontSize: 28,
@@ -139,26 +139,24 @@ export default function UpcomingProducts() {
                     paddingLeft: 10,
                   }}
                 >
-                  AUGUST 2023
+                  NOVEMBER 2023
                 </p>
               </Box>
             </div>
             <div className="col-md-7">
-              <div className="d-flex align-items-center justify-content-center text-center">
-                <img
-                  src="platform.png"
-                  alt="accumulate"
-                  width="100%"
-                  style={{
-                    borderRadius: 21,
-                    maxHeight: 360,
-                    backgroundColor: "#414141",
-                    backgroundImage: `linear-gradient(#7b3fe4, #a726c1)`,
+              <h4 style={{ fontWeight: 22, color: "white", fontWeight: 600 }}>
+                Why to participate?
+              </h4>
+              <p className={classes.para}>
+                Phantazm operates as a decentralized, non-custodial liquidity
+                protocol, organized in two deployment phases, offering users the
+                opportunity to engage as either depositors or borrowers. In the
+                first phase, Aave smart contracts serve as the base, with their
+                implementation setting a foundation for the overall system.
+                Subsequently, in the second phase, Phantazm protocols will
+                follow, which will interact with the same protocol base.
+              </p>
 
-                    padding: 5,
-                  }}
-                />
-              </div>
               {/* <Card
                   className={classes.featureCard}
                   style={{ backgroundColor: "#F7F0E7" }}

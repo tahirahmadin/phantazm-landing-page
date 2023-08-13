@@ -262,19 +262,6 @@ export default function Features() {
   const [x, setX] = useState(window.innerWidth > 400 ? 0 : 0);
   const md = useMediaQuery(theme.breakpoints.down("sm"));
 
-  const goRight = () => {
-    x === -100 * ([1, 2, 3, 4].length - 3) ? setX(0) : setX(x - 100);
-  };
-  const goLeft = () => {
-    x === 100 * ([1, 2, 3, 4].length - 3) ? setX(x + 100) : setX(0);
-  };
-
-  const goRightMob = () => {
-    x === -100 * ([1, 2, 3, 4].length - 1) ? setX(0) : setX(x - 100);
-  };
-  const goLeftMob = () => {
-    x === 100 * ([1, 2, 3, 4].length - 3) ? setX(x + 100) : setX(0);
-  };
   return (
     <div style={{}}>
       <div
@@ -290,7 +277,7 @@ export default function Features() {
 
       <div className={classes.background}>
         <Pulse>
-          <h1 className={classes.heading}>Product highlights</h1>
+          <h1 className={classes.heading}>What is Phantazm</h1>
         </Pulse>
         <Grid container spacing={4} style={{ marginTop: 7 }}>
           <Grid item md={6} sm={12} xs={12}>
@@ -310,18 +297,20 @@ export default function Features() {
                     textAlign: "left",
                   }}
                 >
-                  Automated Trading Strategies{" "}
-                  <span
-                    style={{
-                      fontSize: 28,
-                      fontWeight: 400,
-                      color: "white",
-                      textAlign: "left",
-                    }}
-                  >
-                    {" "}
-                    to bring higher returns and saving time{" "}
-                  </span>
+                  TVL & Emission Sustainability
+                </Typography>
+                <Typography
+                  variant="body3"
+                  style={{
+                    fontSize: 15,
+                    fontWeight: 400,
+                    color: "#f9f9f9",
+                    textAlign: "left",
+                  }}
+                >
+                  For any lending protocol to function, it is crucial to attract
+                  high-quality TVL. Bluechip assets provide the necessary
+                  liquidity that sustains the lending market.
                 </Typography>
               </Box>
             </Box>
@@ -343,18 +332,21 @@ export default function Features() {
                     textAlign: "left",
                   }}
                 >
-                  Curated Tokens Bucket
-                  <span
-                    style={{
-                      fontSize: 28,
-                      fontWeight: 400,
-                      color: "white",
-                      textAlign: "left",
-                    }}
-                  >
-                    {" "}
-                    for 1-click investment into tokens selected by top traders
-                  </span>
+                  Three Token Model
+                </Typography>
+                <Typography
+                  variant="body3"
+                  style={{
+                    fontSize: 15,
+                    fontWeight: 400,
+                    color: "#f9f9f9",
+                    textAlign: "left",
+                  }}
+                >
+                  The vLP is a revenue share token, built on Balancer linear
+                  pools containing assets such as MATIC, ETH, USDT, and USDC.
+                  Its operation involves lending these assets to Phantazm,
+                  making it act as a dedicated supply-side feeder pool.
                 </Typography>
               </Box>
             </Box>
@@ -378,18 +370,21 @@ export default function Features() {
                     textAlign: "left",
                   }}
                 >
-                  Crypto industry insights
-                  <span
-                    style={{
-                      fontSize: 28,
-                      fontWeight: 400,
-                      color: "white",
-                      textAlign: "left",
-                    }}
-                  >
-                    {" "}
-                    to keep you updated with latest trends
-                  </span>
+                  Three Token Model
+                </Typography>
+                <Typography
+                  variant="body3"
+                  style={{
+                    fontSize: 15,
+                    fontWeight: 400,
+                    color: "#f9f9f9",
+                    textAlign: "left",
+                  }}
+                >
+                  The vLP is a revenue share token, built on Balancer linear
+                  pools containing assets such as MATIC, ETH, USDT, and USDC.
+                  Its operation involves lending these assets to Phantazm,
+                  making it act as a dedicated supply-side feeder pool.
                 </Typography>
               </Box>
             </Box>
@@ -411,18 +406,21 @@ export default function Features() {
                     textAlign: "left",
                   }}
                 >
-                  Access to top portfolio
-                  <span
-                    style={{
-                      fontSize: 28,
-                      fontWeight: 400,
-                      color: "white",
-                      textAlign: "left",
-                    }}
-                  >
-                    {" "}
-                    to help you in your trading decisions
-                  </span>
+                  Three Token Model
+                </Typography>
+                <Typography
+                  variant="body3"
+                  style={{
+                    fontSize: 15,
+                    fontWeight: 400,
+                    color: "#f9f9f9",
+                    textAlign: "left",
+                  }}
+                >
+                  The vLP is a revenue share token, built on Balancer linear
+                  pools containing assets such as MATIC, ETH, USDT, and USDC.
+                  Its operation involves lending these assets to Phantazm,
+                  making it act as a dedicated supply-side feeder pool.
                 </Typography>
               </Box>
             </Box>

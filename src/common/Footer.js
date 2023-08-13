@@ -42,8 +42,8 @@ export default function Footer() {
     <div className={classes.background}>
       <div className="container text-center">
         <p className={classes.para}>
-          Copyright 2022 <span className={classes.highlight}>SleepSwap</span>.
-          All Rights Reserved.
+          Copyright 2022 <span className={classes.highlight}>Phatazm</span>. All
+          Rights Reserved.
         </p>
       </div>
     </div>

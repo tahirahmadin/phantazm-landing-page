@@ -210,9 +210,13 @@ export default function PrimarySearchAppBar() {
               noWrap
               fontSize={40}
             >
-              <img src="/SleepSwap_Plain.png" alt="logo" height="45px" />
+              <img
+                src="https://cdn3d.iconscout.com/3d/premium/thumb/atm-machine-7824759-6267547.png?f=webp"
+                alt="logo"
+                height="45px"
+              />
               <span style={{ color: "white" }}>
-                <strong>Sleep</strong>Swap
+                <strong>Phantasm</strong>
               </span>
             </Typography>
           </Link>

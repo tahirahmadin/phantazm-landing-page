@@ -1,6 +1,7 @@
 import { IconButton, Tooltip, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { Twitter, Telegram, GitHub, LinkedIn } from "@material-ui/icons";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   background: {
@@ -163,23 +164,30 @@ export default function SocialLinks() {
     <div className={classes.background}>
       <div className={classes.socialContainer}>
         <div className="container text-center" style={{ paddingTop: 30 }}>
-          <Typography
-            className={classes.title}
-            variant="body2"
-            noWrap
-            fontSize={40}
-          >
-            <img src="/SleepSwap_Plain.png" alt="logo" height="45px" />
-            <span style={{ color: "white" }}>
-              <strong>Sleep</strong>Swap
-            </span>
-          </Typography>
+          <Link to="/">
+            {" "}
+            <Typography
+              className={classes.title}
+              variant="body2"
+              noWrap
+              fontSize={40}
+            >
+              <img
+                src="https://cdn3d.iconscout.com/3d/premium/thumb/atm-machine-7824759-6267547.png?f=webp"
+                alt="logo"
+                height="45px"
+              />
+              <span style={{ color: "white" }}>
+                <strong>Phantasm</strong>
+              </span>
+            </Typography>
+          </Link>
           <div className="row flex-row justify-content-center mt-1">
             <div className="col-3 col-md-1 col-sm-3">
               {" "}
               <div className={classes.iconWrapper}>
                 <Tooltip title="Twitter" aria-label="add1">
-                  <a href="https://twitter.com/sleepswap" target="_blank">
+                  <a href="https://twitter.com/phantazm" target="_blank">
                     <IconButton aria-label="Twitter">
                       <Twitter className={classes.icon} />
                     </IconButton>
@@ -190,7 +198,7 @@ export default function SocialLinks() {
             <div className="col-3 col-md-1 col-sm-3">
               <div className={classes.iconWrapper}>
                 <Tooltip title="Telegram">
-                  <a href="https://t.me/sleepswapio" target="_blank">
+                  <a href="https://t.me/phantazm" target="_blank">
                     <IconButton aria-label="Telegram">
                       <Telegram className={classes.icon} />
                     </IconButton>
@@ -202,7 +210,7 @@ export default function SocialLinks() {
               {" "}
               <div className={classes.iconWrapper}>
                 <Tooltip title="Github">
-                  <a href="https://github.com/SleepSwap" target="_blank">
+                  <a href="https://github.com/phatazm" target="_blank">
                     <IconButton aria-label="Github">
                       <GitHub className={classes.icon} />
                     </IconButton>
@@ -215,7 +223,7 @@ export default function SocialLinks() {
               <div className={classes.iconWrapper}>
                 <Tooltip title="Medium">
                   <a
-                    href="https://www.linkedin.com/company/sleepswap/"
+                    href="https://www.linkedin.com/company/phantazm/"
                     target="_blank"
                   >
                     <IconButton aria-label="Reddit">
@@ -227,7 +235,7 @@ export default function SocialLinks() {
             </div>
           </div>
           <p className={classes.para}>
-            Copyright 2023 <strong>SleepSwap</strong>. All Rights Reserved.
+            Copyright 2023 <strong>Phantazm</strong>. All Rights Reserved.
           </p>
         </div>
       </div>

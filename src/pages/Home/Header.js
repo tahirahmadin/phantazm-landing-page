@@ -103,21 +103,22 @@ export default function Header() {
                     <h1 className={classes.heading}>
                       {/* Enhance your trading journey with our nextGen AI Trading
                       Platform */}
-                      Take profits to sky with our next-Gen AI Trading Platform
+                      Experience nextGen Lending Borrowing Protocol on{" "}
+                      <strong>ZkEvm</strong>
                     </h1>
                     <p className={classes.para}>
-                      Join our community and experience to our intelligent
-                      trading platform.
+                      Join our community and get experience to our beta release.
                     </p>
 
                     <Box className={classes.buttonWrapper}>
                       <a
-                        href="https://t.me/sleepswapio"
+                        href="https://t.me/+bSAr-pUQ93E2OTI8"
                         target="_blank"
                         style={{ textDecoration: "none" }}
                       >
                         <Button className={classes.button}>
-                          <Telegram style={{ marginRight: 10 }} /> Join Waitlist
+                          <Telegram style={{ marginRight: 10 }} /> Join Our
+                          Community
                         </Button>
                       </a>
                     </Box>
@@ -127,9 +128,9 @@ export default function Header() {
               <div className="col-md-5 d-flex justify-content-center align-items-center">
                 {/* <img src="accumulation.png" style={{ maxWidth: "100%" }} /> */}
                 <img
-                  src="Accumulate_Screen.png"
+                  src="https://miro.medium.com/v2/resize:fit:1400/1*nh0BQwU7Oh2bLkrSBtgqdQ.png"
                   height="100%"
-                  style={{ borderRadius: 21, maxHeight: 600 }}
+                  style={{ borderRadius: 21, maxHeight: 300 }}
                 />
               </div>
             </div>
