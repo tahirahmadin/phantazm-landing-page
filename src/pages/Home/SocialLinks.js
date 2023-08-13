@@ -178,7 +178,7 @@ export default function SocialLinks() {
                 height="45px"
               />
               <span style={{ color: "white" }}>
-                <strong>Phantasm</strong>
+                <strong>Phantazm</strong>
               </span>
             </Typography>
           </Link>

@@ -190,7 +190,7 @@ export default function PrimarySearchAppBar() {
           <ListItem button key={tab.name} style={{ paddingLeft: 30 }}>
             <CustomButton
               title={"Join Waitlist"}
-              link={"https://t.me/sleepswapio"}
+              link={"https://t.me/phantazm"}
             ></CustomButton>
           </ListItem>
         ))}
@@ -216,7 +216,7 @@ export default function PrimarySearchAppBar() {
                 height="45px"
               />
               <span style={{ color: "white" }}>
-                <strong>Phantasm</strong>
+                <strong>Phantazm</strong>
               </span>
             </Typography>
           </Link>
@@ -259,7 +259,7 @@ export default function PrimarySearchAppBar() {
             </Link>
 
             <div className={classes.sectionDesktop}>
-              <a href="https://t.me/sleepswapio" target="_blank">
+              <a href="https://t.me/phantazm" target="_blank">
                 <Button className={classes.button}>
                   <Telegram />
                   Join community
@@ -269,9 +269,13 @@ export default function PrimarySearchAppBar() {
           </div>
           <div className={classes.sectionMobile}>
             <div className="d-flex align-items-center">
-              <img src="/SleepSwap_Plain.png" alt="logo" height="45px" />
+              <img
+                src="https://cdn3d.iconscout.com/3d/premium/thumb/atm-machine-7824759-6267547.png?f=webp"
+                alt="logo"
+                height="45px"
+              />
               <span style={{ color: "white" }}>
-                <strong>Sleep</strong>Swap
+                <strong>Phantazm</strong>
               </span>
             </div>
 
