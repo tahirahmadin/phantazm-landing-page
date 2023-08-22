@@ -23,6 +23,12 @@ const useStyles = makeStyles((theme) => ({
       paddingRight: "3%",
     },
   },
+  avatar: {
+    filter: "brightness(0) invert(1)",
+    width: "140px",
+    height: 50,
+    width: 50,
+  },
   socialContainer: {
     paddingLeft: "10%",
     paddingRight: "10%",
@@ -173,9 +179,9 @@ export default function SocialLinks() {
               fontSize={40}
             >
               <img
-                src="https://cdn3d.iconscout.com/3d/premium/thumb/atm-machine-7824759-6267547.png?f=webp"
-                alt="logo"
-                height="45px"
+                src="phantazm_transparent.png"
+                alt="Phantazm"
+                className={classes.avatar}
               />
               <span style={{ color: "white" }}>
                 <strong>Phantazm</strong>
