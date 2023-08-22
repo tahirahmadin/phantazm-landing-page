@@ -278,8 +278,8 @@ a {
   background-image: linear-gradient(#7b3fe4, #a726c1);
   -webkit-background-clip: text;
   background-clip: text;
-  font-size: 5rem;
+  font-size: 2rem;
   font-weight: 600;
-  line-height: 1;
+  line-height: 1.5;
   text-align: left;
 }

@@ -96,13 +96,11 @@ export default function Header() {
       <section>
         <div className={classes.background}>
           <div className={classes.spacing}>
-            <div className="row">
+            <div className="row py-3">
               <div className="col-md-7 d-flex align-items-center">
                 <div>
                   <Pulse>
                     <h1 className={classes.heading}>
-                      {/* Enhance your trading journey with our nextGen AI Trading
-                      Platform */}
                       Experience nextGen Lending Borrowing Protocol on{" "}
                       <strong>ZkEvm</strong>
                     </h1>
@@ -126,11 +124,10 @@ export default function Header() {
                 </div>
               </div>
               <div className="col-md-5 d-flex justify-content-center align-items-center">
-                {/* <img src="accumulation.png" style={{ maxWidth: "100%" }} /> */}
                 <img
-                  src="https://miro.medium.com/v2/resize:fit:1400/1*nh0BQwU7Oh2bLkrSBtgqdQ.png"
+                  src="header-image.png"
                   height="100%"
-                  style={{ borderRadius: 21, maxHeight: 300 }}
+                  style={{ borderRadius: 21, maxHeight: 300, padding: 10 }}
                 />
               </div>
             </div>

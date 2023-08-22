@@ -1,4 +1,4 @@
-import { Box } from "@material-ui/core";
+import { Box, Card } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { CalendarToday } from "@material-ui/icons";
 import Pulse from "react-reveal/Pulse";
@@ -70,7 +70,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   subheading: {
-    color: "#7b3fe4",
+    color: "white",
     width: "auto",
     textAlign: "left",
     lineHeight: 1.2,
@@ -96,10 +96,16 @@ export default function UpcomingProducts() {
       <div className="d-flex justify-content-center">
         <Box className={classes.card}>
           <div className="row">
-            <div className="col-md-5">
+            <div className="col-md-7">
               <h1 className={classes.subheading}>Token Launch!</h1>
               <p className={classes.para}>
-                we are launching out token for public sale.
+                We are launching out token for public sale.
+              </p>
+              <p className={classes.para}>
+                So far the protocol has been entirely bootstrapped and we are
+                planning to do a public token launch. The token is designed to
+                share protocol fees i.e. giving "real yield" and utility to
+                holders in addition to governance.
               </p>
               <Box>
                 <p
@@ -117,19 +123,22 @@ export default function UpcomingProducts() {
                   <CalendarToday style={{ fontSize: 21, marginRight: 7 }} />
                   Launch date
                 </p>
+
                 <h1 className="gradient-text-big">
-                  08{" "}
                   <span
-                    style={{
-                      fontSize: 28,
-                      textTransform: "lowercase",
-                      marginLeft: -20,
-                    }}
+                    style={
+                      {
+                        // fontSize: 28,
+                        // textTransform: "lowercase",
+                        // marginLeft: -20,
+                      }
+                    }
                   >
-                    th
+                    Coming Soon
                   </span>
                 </h1>
-                <p
+
+                {/* <p
                   style={{
                     color: "white",
                     textAlign: "left",
@@ -140,27 +149,15 @@ export default function UpcomingProducts() {
                   }}
                 >
                   NOVEMBER 2023
-                </p>
+                </p> */}
               </Box>
             </div>
-            <div className="col-md-7">
-              <h4 style={{ fontWeight: 22, color: "white", fontWeight: 600 }}>
-                Why to participate?
-              </h4>
-              <p className={classes.para}>
-                Phantazm operates as a decentralized, non-custodial liquidity
-                protocol, organized in two deployment phases, offering users the
-                opportunity to engage as either depositors or borrowers. In the
-                first phase, Aave smart contracts serve as the base, with their
-                implementation setting a foundation for the overall system.
-                Subsequently, in the second phase, Phantazm protocols will
-                follow, which will interact with the same protocol base.
-              </p>
-
-              {/* <Card
-                  className={classes.featureCard}
-                  style={{ backgroundColor: "#F7F0E7" }}
-                ></Card> */}
+            <div className="col-md-5">
+              <img
+                src="https://cdn3d.iconscout.com/3d/premium/thumb/rocket-7865122-6308171.png"
+                height="100%"
+                style={{ borderRadius: 21, maxHeight: 300 }}
+              />
             </div>
           </div>
         </Box>

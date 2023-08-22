@@ -47,15 +47,16 @@ const useStyles = makeStyles((theme) => ({
   featureCardMain: {
     backgroundColor: "#171320",
     borderRadius: 14,
-    height: 320,
+    minHeight: 100,
+    height: "100%",
     width: "100%",
-
-    backgroundSize: "contain",
-    backgroundPosition: "right bottom",
-    backgroundRepeat: "no-repeat",
-    padding: 28,
+    paddingLeft: 28,
+    paddingRight: 28,
+    paddingTop: 30,
+    paddingBottom: 30,
     [theme.breakpoints.down("sm")]: {
-      height: 480,
+      minHeight: 300,
+      height: "100%",
     },
   },
   para: {
@@ -279,15 +280,15 @@ export default function Features() {
         <Pulse>
           <h1 className={classes.heading}>What is Phantazm</h1>
         </Pulse>
-        <Grid container spacing={4} style={{ marginTop: 7 }}>
-          <Grid item md={6} sm={12} xs={12}>
-            <Box
-              className={classes.featureCardMain}
-              style={{
-                backgroundImage: `url(https://cdn3d.iconscout.com/3d/premium/thumb/man-doing-online-accounting-7068888-5751896.png)`,
-              }}
-            >
-              <Box maxWidth={250}>
+        <Box>
+          <Grid container spacing={4} style={{ marginTop: 7 }} gap={2}>
+            <Grid item md={6} sm={6} xs={6}>
+              <Box className={classes.featureCardMain}>
+                <img
+                  src="https://cdn3d.iconscout.com/3d/premium/thumb/ethereum-wallet-5533583-4623170.png"
+                  height="100%"
+                  style={{ borderRadius: 21, maxHeight: 140 }}
+                />
                 <Typography
                   variant="h5"
                   style={{
@@ -295,9 +296,11 @@ export default function Features() {
                     fontWeight: 600,
                     color: "#8a46ff",
                     textAlign: "left",
+                    marginTop: 7,
+                    marginBottom: 7,
                   }}
                 >
-                  TVL & Emission Sustainability
+                  Decentralized, Non-Custodial protocol
                 </Typography>
                 <Typography
                   variant="body3"
@@ -308,21 +311,19 @@ export default function Features() {
                     textAlign: "left",
                   }}
                 >
-                  For any lending protocol to function, it is crucial to attract
-                  high-quality TVL. Bluechip assets provide the necessary
-                  liquidity that sustains the lending market.
+                  Using AAVE as base contracts, with some magic of yield farming
+                  on top, Phantazm aims to become the main liquidity hub on
+                  Polygon zkEVM.
                 </Typography>
               </Box>
-            </Box>
-          </Grid>
-          <Grid item md={6} sm={12} xs={12}>
-            <Box
-              className={classes.featureCardMain}
-              style={{
-                backgroundImage: `url(https://cdn3d.iconscout.com/3d/premium/thumb/unboxing-crypto-6217470-5102407.png)`,
-              }}
-            >
-              <Box maxWidth={250}>
+            </Grid>
+            <Grid item md={6} sm={6} xs={6} gap={10}>
+              <Box className={classes.featureCardMain}>
+                <img
+                  src="https://cdn3d.iconscout.com/3d/premium/thumb/metaverse-polygon-matic-5355603-4474710.png?f=webp"
+                  height="100%"
+                  style={{ borderRadius: 21, maxHeight: 140 }}
+                />
                 <Typography
                   variant="h5"
                   style={{
@@ -330,9 +331,11 @@ export default function Features() {
                     fontWeight: 600,
                     color: "#8a46ff",
                     textAlign: "left",
+                    marginTop: 7,
+                    marginBottom: 7,
                   }}
                 >
-                  Three Token Model
+                  Why Polygon zkEVM ?
                 </Typography>
                 <Typography
                   variant="body3"
@@ -343,24 +346,22 @@ export default function Features() {
                     textAlign: "left",
                   }}
                 >
-                  The vLP is a revenue share token, built on Balancer linear
-                  pools containing assets such as MATIC, ETH, USDT, and USDC.
-                  Its operation involves lending these assets to Phantazm,
-                  making it act as a dedicated supply-side feeder pool.
+                  We strongly believe in Polygon's vision of multichain Ethereum
+                  powered by ZK. Additionaly zkEVM has the best Dev-Exp across
+                  all zk Rollups - we are excited to push forward the app layer
+                  of such a great infrastructure.
                 </Typography>
               </Box>
-            </Box>
+            </Grid>
           </Grid>
-        </Grid>
-        <Grid container spacing={4} style={{ marginTop: 7 }}>
-          <Grid item md={6} sm={12} xs={12}>
-            <Box
-              className={classes.featureCardMain}
-              style={{
-                backgroundImage: `url(https://cdn3d.iconscout.com/3d/premium/thumb/electric-bulb-7971760-6397909.png)`,
-              }}
-            >
-              <Box maxWidth={250}>
+          <Grid container spacing={4} style={{ marginTop: 7 }} gap={2}>
+            <Grid item md={6} sm={6} xs={6}>
+              <Box className={classes.featureCardMain}>
+                <img
+                  src="https://cdn3d.iconscout.com/3d/premium/thumb/balancer-8634795-6876110.png?f=webp"
+                  height="100%"
+                  style={{ borderRadius: 21, maxHeight: 140 }}
+                />
                 <Typography
                   variant="h5"
                   style={{
@@ -368,9 +369,11 @@ export default function Features() {
                     fontWeight: 600,
                     color: "#8a46ff",
                     textAlign: "left",
+                    marginTop: 7,
+                    marginBottom: 7,
                   }}
                 >
-                  Three Token Model
+                  Using Balancer for yield
                 </Typography>
                 <Typography
                   variant="body3"
@@ -381,22 +384,22 @@ export default function Features() {
                     textAlign: "left",
                   }}
                 >
-                  The vLP is a revenue share token, built on Balancer linear
-                  pools containing assets such as MATIC, ETH, USDT, and USDC.
-                  Its operation involves lending these assets to Phantazm,
-                  making it act as a dedicated supply-side feeder pool.
+                  When a user interacts with Phantazm by supplying any of the 6
+                  supported assets, it closely resembles the process of engaging
+                  with Balancer weighted pools.{" "}
+                  <a href="https://phantazm.gitbook.io/phantazm-1/v2/supplying-assets-into-lps">
+                    Read more
+                  </a>
                 </Typography>
               </Box>
-            </Box>
-          </Grid>
-          <Grid item md={6} sm={12} xs={12}>
-            <Box
-              className={classes.featureCardMain}
-              style={{
-                backgroundImage: `url(https://cdn3d.iconscout.com/3d/premium/thumb/startup-portfolio-5442588-4568148.png)`,
-              }}
-            >
-              <Box maxWidth={250}>
+            </Grid>
+            <Grid item md={6} sm={6} xs={6} gap={10}>
+              <Box className={classes.featureCardMain}>
+                <img
+                  src="https://cdn3d.iconscout.com/3d/premium/thumb/rocket-7865122-6308171.png"
+                  height="100%"
+                  style={{ borderRadius: 21, maxHeight: 140 }}
+                />
                 <Typography
                   variant="h5"
                   style={{
@@ -404,9 +407,11 @@ export default function Features() {
                     fontWeight: 600,
                     color: "#8a46ff",
                     textAlign: "left",
+                    marginTop: 7,
+                    marginBottom: 7,
                   }}
                 >
-                  Three Token Model
+                  Token launch
                 </Typography>
                 <Typography
                   variant="body3"
@@ -417,15 +422,16 @@ export default function Features() {
                     textAlign: "left",
                   }}
                 >
-                  The vLP is a revenue share token, built on Balancer linear
-                  pools containing assets such as MATIC, ETH, USDT, and USDC.
-                  Its operation involves lending these assets to Phantazm,
-                  making it act as a dedicated supply-side feeder pool.
+                  So far the protocol has been entirely bootstrapped and we are
+                  planning to do a public token launch. The token is designed to
+                  share protocol fees i.e. giving "real yield" and utility to
+                  holders in addition to governance.
                 </Typography>
               </Box>
-            </Box>
+            </Grid>
           </Grid>
-        </Grid>
+        </Box>
+
         {/* <div className={classes.container}>
           <div className="container d-md-flex align-items-center justify-content-evenly mt-5">
             <div className="col-md-3">

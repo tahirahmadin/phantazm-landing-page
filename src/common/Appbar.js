@@ -257,7 +257,14 @@ export default function PrimarySearchAppBar() {
                 Partners
               </Typography>
             </Link>
-
+            <a
+              href="https://phantazm.gitbook.io/phantazm-1/v2/supplying-assets-into-lps"
+              target="_blank"
+            >
+              <Typography className={classes.tabs} variant="body1">
+                Documentation
+              </Typography>
+            </a>
             <div className={classes.sectionDesktop}>
               <a href="https://t.me/phantazm" target="_blank">
                 <Button className={classes.button}>

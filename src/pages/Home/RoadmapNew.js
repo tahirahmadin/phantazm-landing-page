@@ -132,12 +132,10 @@ export default function RoadmapNew() {
                   height="75px"
                 />
               </div>
-              <h5 className={classes.cardTitle}>Token Launch</h5>
+              <h5 className={classes.cardTitle}>Mainnet Release</h5>
               <div className="mt-3">
-                <li className={classes.li}>Minimum viable product is ready</li>
-                <li className={classes.li}>
-                  Preparing for IDO launch & raising funds.
-                </li>
+                <li className={classes.li}>Token release for the community</li>
+                <li className={classes.li}>Mainnet release of the protocol</li>
               </div>
             </Card>
           </Grid>
@@ -159,10 +157,11 @@ export default function RoadmapNew() {
                   height="60px"
                 />
               </div>
-              <h5 className={classes.cardTitle}>Mainnet Release</h5>
+              <h5 className={classes.cardTitle}>V2 Release</h5>
               <div className="mt-3">
                 <li className={classes.li}>
-                  Operational lending and borrowing product will be live.
+                  V2 with bonding curve innovation for more yield farming thru
+                  Balancer.
                 </li>
                 <li className={classes.li}>
                   Briding 10M+ Liquidity to our protocol
