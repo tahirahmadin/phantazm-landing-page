@@ -282,7 +282,7 @@ export default function Features() {
         </Pulse>
         <Box>
           <Grid container spacing={4} style={{ marginTop: 7 }} gap={2}>
-            <Grid item md={6} sm={6} xs={6}>
+            <Grid item md={6} sm={12} xs={12}>
               <Box className={classes.featureCardMain}>
                 <img
                   src="https://cdn3d.iconscout.com/3d/premium/thumb/ethereum-wallet-5533583-4623170.png"
@@ -317,7 +317,7 @@ export default function Features() {
                 </Typography>
               </Box>
             </Grid>
-            <Grid item md={6} sm={6} xs={6} gap={10}>
+            <Grid item md={6} sm={12} xs={12}>
               <Box className={classes.featureCardMain}>
                 <img
                   src="https://cdn3d.iconscout.com/3d/premium/thumb/metaverse-polygon-matic-5355603-4474710.png?f=webp"
@@ -355,7 +355,7 @@ export default function Features() {
             </Grid>
           </Grid>
           <Grid container spacing={4} style={{ marginTop: 7 }} gap={2}>
-            <Grid item md={6} sm={6} xs={6}>
+            <Grid item md={6} sm={12} xs={12}>
               <Box className={classes.featureCardMain}>
                 <img
                   src="https://cdn3d.iconscout.com/3d/premium/thumb/balancer-8634795-6876110.png?f=webp"
@@ -393,7 +393,7 @@ export default function Features() {
                 </Typography>
               </Box>
             </Grid>
-            <Grid item md={6} sm={6} xs={6} gap={10}>
+            <Grid item md={6} sm={12} xs={12}>
               <Box className={classes.featureCardMain}>
                 <img
                   src="https://cdn3d.iconscout.com/3d/premium/thumb/rocket-7865122-6308171.png"
