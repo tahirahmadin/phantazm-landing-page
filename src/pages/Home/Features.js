@@ -295,7 +295,7 @@ export default function Features() {
                     fontSize: 28,
                     fontWeight: 600,
                     color: "#8a46ff",
-                    textAlign: "left",
+                    textAlign: md ? "center" : "left",
                     marginTop: 7,
                     marginBottom: 7,
                   }}
@@ -308,7 +308,7 @@ export default function Features() {
                     fontSize: 15,
                     fontWeight: 400,
                     color: "#f9f9f9",
-                    textAlign: "left",
+                    textAlign: md ? "center" : "left",
                   }}
                 >
                   Using AAVE as base contracts, with some magic of yield farming
@@ -327,10 +327,10 @@ export default function Features() {
                 <Typography
                   variant="h5"
                   style={{
-                    fontSize: 28,
+                    fontSize: 27,
                     fontWeight: 600,
                     color: "#8a46ff",
-                    textAlign: "left",
+                    textAlign: md ? "center" : "left",
                     marginTop: 7,
                     marginBottom: 7,
                   }}
@@ -343,7 +343,7 @@ export default function Features() {
                     fontSize: 15,
                     fontWeight: 400,
                     color: "#f9f9f9",
-                    textAlign: "left",
+                    textAlign: md ? "center" : "left",
                   }}
                 >
                   We strongly believe in Polygon's vision of multichain Ethereum
@@ -368,7 +368,7 @@ export default function Features() {
                     fontSize: 28,
                     fontWeight: 600,
                     color: "#8a46ff",
-                    textAlign: "left",
+                    textAlign: md ? "center" : "left",
                     marginTop: 7,
                     marginBottom: 7,
                   }}
@@ -381,7 +381,7 @@ export default function Features() {
                     fontSize: 15,
                     fontWeight: 400,
                     color: "#f9f9f9",
-                    textAlign: "left",
+                    textAlign: md ? "center" : "left",
                   }}
                 >
                   When a user interacts with Phantazm by supplying any of the 6
@@ -406,7 +406,7 @@ export default function Features() {
                     fontSize: 28,
                     fontWeight: 600,
                     color: "#8a46ff",
-                    textAlign: "left",
+                    textAlign: md ? "center" : "left",
                     marginTop: 7,
                     marginBottom: 7,
                   }}
@@ -419,7 +419,7 @@ export default function Features() {
                     fontSize: 15,
                     fontWeight: 400,
                     color: "#f9f9f9",
-                    textAlign: "left",
+                    textAlign: md ? "center" : "left",
                   }}
                 >
                   So far the protocol has been entirely bootstrapped and we are

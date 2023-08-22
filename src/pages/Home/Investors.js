@@ -177,7 +177,7 @@ export default function Investors() {
               <Fade left>
                 <div className={classes.people}>
                   <img
-                    src="https://api3.org/img/logo.png"
+                    src="https://moonbeam.network/wp-content/uploads/2021/05/api3-500.png"
                     alt="API3"
                     className={classes.avatar}
                     style={{ maxWidth: 100 }}

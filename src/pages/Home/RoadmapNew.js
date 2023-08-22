@@ -160,7 +160,7 @@ export default function RoadmapNew() {
               <h5 className={classes.cardTitle}>V2 Release</h5>
               <div className="mt-3">
                 <li className={classes.li}>
-                  V2 with bonding curve innovation for more yield farming thru
+                  V2 with bonding curve innovation for more yield farming using
                   Balancer.
                 </li>
                 <li className={classes.li}>
@@ -177,7 +177,7 @@ export default function RoadmapNew() {
             style={{ display: "flex", justifyContent: "center" }}
           >
             <Card className={classes.card}>
-              <h5 className={classes.quarterTitle}>Scaling</h5>
+              <h5 className={classes.quarterTitle}>Q1 - 2024</h5>
               <div
                 className="d-flex justify-content-center align-items-center"
                 style={{ height: 120 }}
@@ -187,7 +187,7 @@ export default function RoadmapNew() {
                   height="75px"
                 />
               </div>
-              <h5 className={classes.cardTitle}>Mainnet Release</h5>
+              <h5 className={classes.cardTitle}>Scaling</h5>
               <div className="mt-3">
                 <li className={classes.li}>MultiChain Lending and Borrowing</li>
                 <li className={classes.li}>
