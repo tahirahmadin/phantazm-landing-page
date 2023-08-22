@@ -127,7 +127,12 @@ export default function Header() {
                 <img
                   src="header-image.png"
                   height="100%"
-                  style={{ borderRadius: 21, maxHeight: 300, padding: 10 }}
+                  style={{
+                    borderRadius: 21,
+                    maxHeight: 300,
+                    padding: 10,
+                    width: md && "100%",
+                  }}
                 />
               </div>
             </div>

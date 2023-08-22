@@ -265,7 +265,7 @@ export default function PrimarySearchAppBar() {
               </Typography>
             </Link>
             <a
-              href="https://phantazm.gitbook.io/phantazm-1/v2/supplying-assets-into-lps"
+              href="https://phantazm.gitbook.io/phantazm-1/intro/intro"
               target="_blank"
             >
               <Typography className={classes.tabs} variant="body1">
